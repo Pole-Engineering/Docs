@@ -11,7 +11,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://docs.pole.engineering",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -75,10 +75,10 @@ const config = {
             position: "left",
             label: "Getting Started",
           },
-          { to: "/docs/bom", label: "BOM", position: "left" },
+          { to: "/bom", label: "BOM", position: "left" },
           { to: "/configurator", label: "Configurator", position: "left" },
           { to: "/mods", label: "Mods", position: "left" },
-          { to: "/gallery/gallery", label: "Gallery", position: "left" },
+          { to: "/gallery", label: "Gallery", position: "left" },
           { to: "/about", label: "About", position: "left" },
 
           {
