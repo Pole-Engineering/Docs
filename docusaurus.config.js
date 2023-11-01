@@ -18,8 +18,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Pole Engineering", // Usually your GitHub org/user name.
-  projectName: "poleengineering", // Usually your repo name.
+  organizationName: "Pole-Engineering", // Usually your GitHub org/user name.
+  projectName: "Docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
