@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 2. Gantry Assembly
 ## Overview
-We've probably reached the most challenging part, the gantry assembly. Once we get through this stage, there isn't much left to do!
+You've probably reached the most challenging part, the gantry assembly. Once we get through this stage, there isn't much left to do!
 
 ![Gantry](../../../static/img/gantry-assembly/gantry-preview.png)
 
@@ -103,7 +103,7 @@ We've probably reached the most challenging part, the gantry assembly. Once we g
      <tr>
       <td>5x5mm Clamp Coupling </td>
       <td>4x</td>
-      <td>For fixing the 70mm shaft to motor shaft.</td>
+      <td>For fixing the 70mm shaft to the motor shaft.</td>
     </tr>
     <tr>
       <td>625ZZ</td>
@@ -123,17 +123,17 @@ We've probably reached the most challenging part, the gantry assembly. Once we g
        <tr>
       <td><a href="https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/%5Ba%5D_top_shear_x4.stl" target="_blank" rel="noopener noreferrer">Top Shears</a></td>
       <td>4x</td>
-      <td>3D Printed top shears for shaft support.</td>
+      <td>3D Printed top shaft support.</td>
     </tr>
       <tr>
       <td><a href="https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/%5Ba%5D_bottom_shear_x4.stl" target="_blank" rel="noopener noreferrer">Bottom Shears A</a></td>
       <td>4x</td>
-      <td>3D Printed bottom shears A for shaft support.</td>
+      <td>3D Printed bottom shaft support A.</td>
     </tr>
      <tr>
       <td><a href="https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/%5Ba%5D_bottom_shear_x4.stl" target="_blank" rel="noopener noreferrer">Bottom Shears B</a></td>
       <td>4x</td>
-      <td>3D Printed bottom shears B for shaft support.</td>
+      <td>3D Printed bottom shaft support B.</td>
     </tr>
      <tr>
       <td><a href="https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Misc/rail_stop_x10.stl" target="_blank" rel="noopener noreferrer">Rail Ends</a></td>
@@ -143,7 +143,7 @@ We've probably reached the most challenging part, the gantry assembly. Once we g
     <tr>
       <td><a href="https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/xy_joint_x2.stl" target="_blank" rel="noopener noreferrer">XY Joints</a></td>
       <td>4x</td>
-      <td>3D Printed rail ends.</td>
+      <td>3D Printed XY-Joints.</td>
     </tr>
      <tr>
       <td><a href="https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/joint_tensioner_x4.stl" target="_blank" rel="noopener noreferrer">Tensioners</a></td>
@@ -168,24 +168,43 @@ We've probably reached the most challenging part, the gantry assembly. Once we g
 > 
  > There are two distinct assemblies related to the positioning of pulleys and idlers, as well as differences in shear. (Motor Assembly A on the left, Motor Assembly B on the right)
  >
- > - Tip You will be specified the common steps in both assemblies.
+ > - You will be specified the common steps in both assemblies.
  >
  >![Gantry](../../../static/img/gantry-assembly/motorassembly-a.png) 
  
 ### a) Coupling & Shaft
- > - First, secure the coupling to the motor shaft using a [3D printed coupling guide](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/joint_tensioner_x4.stl), and then push the 70mm shaft into the coupling as far as it can go and secure it.
- > - This step is common for both assemblies and repeat that process for 4 times.
+ > - First, secure the coupling to the motor shaft using the [3D printed coupling guide](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/joint_tensioner_x4.stl), and then push the 70mm shaft into the coupling as far as it can go and secure it.
+ > - This step is common for both assemblies and repeat this process for 4 times.
  >
  >![Gantry](../../../static/img/gantry-assembly/motorshaftassembly.png) 
 
  ### b) Motor Mounting
- > - Now, we need to mount the stepper motor to the [motor mount](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/xy_motor_mount_x4.stl) using four M3x25mm bolts. Also, don't forget to prepare the M4x20 screws and T-nuts to secure the motor mounts to the frame.
- > - This step is common for both assemblies and repeat that process for 4 times.
+ > - Now, you need to mount the stepper motor to the [motor mount](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/xy_motor_mount_x4.stl) using four M3x25mm bolts. Also, don't forget to prepare the M4x20 screws and T-nuts to secure the motor mounts to the frame.
+ > - This step is common for both assemblies and repeat this process for 4 times.
  >
  >![Gantry](../../../static/img/gantry-assembly/motormount1.PNG) 
   
-  ### c) Top & Bottom Shears
- > - Next, we need to prepare the top and bottom shears. We press-fit 625ZZ or 625RS2 bearings into 3D printed parts to ensure a secure fit. Also, don't forget to prepare the M4x8 screws and T-nuts to secure the motor mounts to the frame.
- > - This step is common for both assemblies and repeat that process for all the top and bottom shears.
+  ### c) Top & Bottom Shaft Supports
+ > - Next, you need to prepare the top and bottom shaft supports. We press-fit 625ZZ or 625RS2 bearings into the 3D printed parts to ensure a secure fit. Also, don't forget to prepare the M4x8 screws and T-nuts to secure the motor mounts to the frame.
+ > - This step is common for both assemblies and repeat this process for all the top and bottom shaft supports.
  >
  >![Gantry](../../../static/img/gantry-assembly/topshear.png) 
+
+   ### d) Fixed Rails
+ > - Prepare the bolts and T-nuts that will be used to secure the rails to the frame, you need to first get them ready for installation
+ > - You need to prepare all the 4 fixed rails.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/fixed-rails-assembly.png) 
+ > 
+ > - Mount the rails to the locations shown in the lower photo, but do not tighten the bolts too much; we will adjust the exact positioning later.
+ >
+ >:::caution
+ > - Mount the rails with carriage on it otherwise you wont be able to install the blocks.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/fixed-rails-overview.png) 
+ >::: 
+   
+   ### e) Cross Rails & XY-Joints 
+   
+ >![Gantry](../../../static/img/gantry-assembly/xy-joint.PNG) 
+ >![Gantry](../../../static/img/gantry-assembly/xy-joint-rail.PNG) 

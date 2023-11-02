@@ -5,10 +5,10 @@ sidebar_position: 1
 # 1. Frame Assembly
 
 ## Overview
-After completing this guide, your printer's frame will be prepared for assembling the gantry and z-axis. Be patient and enjoy the assembly process!
+After completing this guide, your printer's frame will be ready for assembling the gantry and z-axis. Be patient and enjoy the assembly process!
 
 :::tip 
-Build the printer on flat surface and use locksmith angle to align the corners.
+Build the printer on flat surface and use try square or similar to align the corners.
 :::
 ![Frame](../../../static/img/frame-assembly/frame.PNG)
 
@@ -46,12 +46,12 @@ Build the printer on flat surface and use locksmith angle to align the corners.
     <tr>
       <td>3.5mm/4mm Hex Key</td>
       <td>1x</td>
-      <td>Depending on the profile type, you may need to use 3.5mm or 4mm hex key.</td>
+      <td>Depending on the profile type, you may need to use a 3.5mm or 4mm hex key.</td>
     </tr>
         <tr>
       <td>Corner Joint</td>
       <td>4x</td>
-      <td>The corner joint to secure the extrusion that holding the middle Z-rail</td>
+      <td>The corner joint attaches the extrusion that holds the middle Z-rail.</td>
     </tr>
     <tr>
       <td>625ZZ</td>
@@ -108,15 +108,15 @@ Build the printer on flat surface and use locksmith angle to align the corners.
  >
  >![Frame](../../../static/img/frame-assembly/drilljig.PNG)
  >
- > - b) You need to tap both holes on all of the 350mm.
+ > - b) You need to tap both ends on all of the 350mm extrusions.
  >
  >![Frame](../../../static/img/frame-assembly/drilled-extrusions.PNG)
  >
- > - c) Drive the bolt into the tapped holes by approximately 10mm.
+ > - c) Screw the bolt into the tapped holes (approximately 10mm.)
  >
  >![Frame](../../../static/img/frame-assembly/extrusion1.PNG)
  >
- >- d) Finally, pass the extrusion's slot over the bolt, securing it through the holes you've drilled 
+ >- d) Finally, Slide the extrusion onto the bolt and tighten it through the predrilled hole.  
  >
  >:::caution 
  >Tightening the bolts excessively can potentially damage the threads.
@@ -128,7 +128,7 @@ Build the printer on flat surface and use locksmith angle to align the corners.
 > Here, we begin assembling the frame. Please pay careful attention to the steps.
 > 
 > ### Step 1
-> - First, you need to attach the lowermost extrusions to the vertical ones using blind joints.
+> - First, you need to attach the lowermost extrusions to the vertical ones using blind joints. [(See 1.1)](/docs/assembly-guide/crossant/frame/#11-blind-joint)
 >
 > ![Frame](../../../static/img/frame-assembly/step1.PNG)
 
@@ -140,7 +140,7 @@ Build the printer on flat surface and use locksmith angle to align the corners.
  
 
 > ### Step 3
-> - Finally, slide all the other 350mm extrusions from the top into the slots of the 530mm extrusions and tighten the blind joints. 
+> - Finally, slide the other 350mm extrusions from the top into the slots of the 530mm extrusions and tighten the blind joints. The distances should be (from the bottom, face to face): 300mm, 55mm and 95mm.  
 > - Don't forget to add 2 more corner brackets for the middle Z-rail holder extrusion to secure to the upper extrusion.
 > 
 > ![Frame](../../../static/img/frame-assembly/step3.PNG)
