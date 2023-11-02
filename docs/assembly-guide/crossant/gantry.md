@@ -155,6 +155,37 @@ We've probably reached the most challenging part, the gantry assembly. Once we g
       <td>4x</td>
       <td>3D Printed 2.5mm spacers.</td>
     </tr>
+     <tr>
+      <td><a href="https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/joint_tensioner_x4.stl" target="_blank" rel="noopener noreferrer">Coupling Mount Guide</a></td>
+      <td>1x</td>
+      <td>3D Printed coupling mount guide.</td>
+    </tr>
 
   </tbody>
 </table>
+
+## 2.1 Motor Mounts
+> 
+ > There are two distinct assemblies related to the positioning of pulleys and idlers, as well as differences in shear. (Motor Assembly A on the left, Motor Assembly B on the right)
+ >
+ > - Tip You will be specified the common steps in both assemblies.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/motorassembly-a.png) 
+ 
+### a) Coupling & Shaft
+ > - First, secure the coupling to the motor shaft using a [3D printed coupling guide](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/joint_tensioner_x4.stl), and then push the 70mm shaft into the coupling as far as it can go and secure it.
+ > - This step is common for both assemblies and repeat that process for 4 times.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/motorshaftassembly.png) 
+
+ ### b) Motor Mounting
+ > - Now, we need to mount the stepper motor to the [motor mount](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/xy_motor_mount_x4.stl) using four M3x25mm bolts. Also, don't forget to prepare the M4x20 screws and T-nuts to secure the motor mounts to the frame.
+ > - This step is common for both assemblies and repeat that process for 4 times.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/motormount1.PNG) 
+  
+  ### c) Top & Bottom Shears
+ > - Next, we need to prepare the top and bottom shears. We press-fit 625ZZ or 625RS2 bearings into 3D printed parts to ensure a secure fit. Also, don't forget to prepare the M4x8 screws and T-nuts to secure the motor mounts to the frame.
+ > - This step is common for both assemblies and repeat that process for all the top and bottom shears.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/topshear.png) 
