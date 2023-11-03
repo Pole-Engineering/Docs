@@ -203,8 +203,25 @@ You've probably reached the most challenging part, the gantry assembly. Once we 
  >
  >![Gantry](../../../static/img/gantry-assembly/fixed-rails-overview.png) 
  >::: 
+ >:::tip 
+ Use rail centering tool.
    
    ### e) Cross Rails & XY-Joints 
    
+ > - You're starting to prepare the XY joints, first by attaching the nut and bolt that will secure the rail in place by tightening it.
+ > - Repeat this process for all the XY joints.
+ >
  >![Gantry](../../../static/img/gantry-assembly/xy-joint.PNG) 
+ >
+ > - Now you can place the rail in position, but fully tightening the bolt may make the assembly more difficult. Tighten the bolt that secures the rail, but not completely.
+ >
  >![Gantry](../../../static/img/gantry-assembly/xy-joint-rail.PNG) 
+
+ >:::caution
+ > - To assemble the XY joints, you'll need to loosen and slide the extrusions marked in blue in the pictures below a bit.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/blue-extrusion.png) 
+ >
+ > - Frame should look like this before the XY Joints assembly.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/before-assembly.png) 
