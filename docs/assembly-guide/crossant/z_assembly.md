@@ -87,7 +87,7 @@ After completing this section, you will have finished assembling all the axes.
       <td>Slider guide for heatbed.</td>
     </tr>
        <tr>
-      <td>250mm T8 Leadscrew and Nut </td>
+      <td>300mm T8 Leadscrew and Nut </td>
       <td>3x</td>
       <td>Leadscrew.</td>
     </tr>
@@ -97,7 +97,7 @@ After completing this section, you will have finished assembling all the axes.
       <td>Coupling that fixes leadscrews to the motor shafts.</td>
     </tr>
       <tr>
-      <td>MGN9H 250mm </td>
+      <td>MGN9H 300mm </td>
       <td>3x</td>
       <td>Coupling that fixes leadscrews to the motor shafts.</td>
     </tr>
@@ -105,3 +105,30 @@ After completing this section, you will have finished assembling all the axes.
 
   </tbody>
 </table>
+
+## Assembly 
+You can configure the printer with 3 different Z systems, but currently, only the assembly for the leadscrew Z version is available
+
+### a) Mounting the Rails
+>First, you need to attach the MGN9H 300mm rails, which will carry the Z-axis, to the frame using M3x8 socket head screws and M3 T-nuts.
+>:::tip 
+>Use the [rail centering tool](https://github.com/Pole-Engineering/Crossant-235) for proper installation.
+>:::
+>
+>![Z Axis](../../../static/img/z-assembly/rail-mount.png)
+
+### b) Preparing the Joints
+>
+>Now, you need to prepare the Z joints by following the steps below:
+>
+>- Insert OD4 50mm rods:
+>Gently push the OD4 50mm rods inward from the front locations of the part. Be careful, as the part can crack.
+>
+>- Secure the T8 nut:
+>Secure the T8 nut using 4 M3x15 screws and 4 locknuts. However, do not tighten the nuts all the way. The nuts should be able to move easily in both axes to eliminate Z > wobble.
+>
+>![Z Axis](../../../static/img/z-assembly/joint%20assembly.png)
+>
+>- It should look like this after assembly.
+>
+>![Z Axis](../../../static/img/z-assembly/join%20final.png)

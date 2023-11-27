@@ -100,7 +100,8 @@ Build the printer on flat surface and use try square or similar to align the cor
 
 
  ## 1.1 Blind Joint
- > - a) You'll need to drill and tap the necessary holes for the blind joints. You can utilize the jig provided to you on [Github](https://github.com/Pole-Engineering/Crossant-235/tree/main/STLs/Tools) to ensure the holes are drilled in the correct positions.
+### a) Drilling Holes
+>You'll need to drill and tap the necessary holes for the blind joints. You can utilize the jig provided to you on [Github](https://github.com/Pole-Engineering/Crossant-235/tree/main/STLs/Tools) to ensure the holes are drilled in the correct positions.
  >
  > - Holes should be drilled on the 530mm extrusions at positions **10mm, 125mm, and 200mm** from the top and **10mm** from the bottom of the extrusion.
  >
@@ -108,15 +109,21 @@ Build the printer on flat surface and use try square or similar to align the cor
  >
  >![Frame](../../../static/img/frame-assembly/drilljig.PNG)
  >
- > - b) You need to tap both ends on all of the 350mm extrusions.
+
+### b) Tapping
+ >You need to tap both ends on all of the 350mm extrusions.
  >
  >![Frame](../../../static/img/frame-assembly/drilled-extrusions.PNG)
  >
- > - c) Screw the bolt into the tapped holes (approximately 10mm.)
+
+### c) Preparing Blind Joint 
+ >Screw the bolt into the tapped holes (approximately 10mm.)
  >
  >![Frame](../../../static/img/frame-assembly/extrusion1.PNG)
  >
- >- d) Finally, Slide the extrusion onto the bolt and tighten it through the predrilled hole.  
+
+### d) Fixing 
+ >Finally, Slide the extrusion onto the bolt and tighten it through the predrilled hole.  
  >
  >:::caution 
  >Tightening the bolts excessively can potentially damage the threads.
@@ -127,19 +134,20 @@ Build the printer on flat surface and use try square or similar to align the cor
  ## 1.2 Assembly Process
 > Here, we begin assembling the frame. Please pay careful attention to the steps.
 > 
-> ### Step 1
+
+ ### a) Vertical Extrusions
 > - First, you need to attach the lowermost extrusions to the vertical ones using blind joints. [(See 1.1)](/docs/assembly-guide/crossant/frame/#11-blind-joint)
 >
 > ![Frame](../../../static/img/frame-assembly/step1.PNG)
 
-> ### Step 2
+ ### b) Middle Z Rail Extrusion
 > - Secure the extrusion that will support the middle Z-rail using corner brackets.
 > - The extrusion should be centered right beneath the bottom profile. (175mm from both side)
 > 
 > ![Frame](../../../static/img/frame-assembly/step2.PNG)
  
 
-> ### Step 3
+ ### c) Horizontal Extrusions
 > - Finally, slide the other 350mm extrusions from the top into the slots of the 530mm extrusions and tighten the blind joints. The distances should be (from the bottom, face to face): 300mm, 55mm and 95mm.  
 > - Don't forget to add 2 more corner brackets for the middle Z-rail holder extrusion to secure to the upper extrusion.
 > 
