@@ -5,7 +5,7 @@ sidebar_position: 1
 # 1. Frame Assembly
 
 ## Overview
-After completing this guide, your printer's frame will be ready for assembling the gantry and z-axis. Be patient and enjoy the assembly process!
+After completing this guide, your frame will be ready for assembling the gantry and z-axis. Be patient and enjoy the assembly process!
 
 :::tip 
 Build the printer on flat surface and use try square or similar to align the corners.
@@ -132,11 +132,11 @@ Build the printer on flat surface and use try square or similar to align the cor
  >![Frame](../../../static/img/frame-assembly/frame-hex.PNG)
 
  ## 1.2 Assembly Process
-> Here, we begin assembling the frame. Please pay careful attention to the steps.
+> Here, let's begin assembling the frame. Please pay careful attention to the steps.
 > 
 
  ### a) Vertical Extrusions
-> - First, you need to attach the lowermost extrusions to the vertical ones using blind joints. [(See 1.1)](/docs/assembly-guide/crossant/frame/#11-blind-joint)
+> - First, attach the lowermost extrusions to the vertical ones using blind joints. [(See 1.1)](/docs/assembly-guide/crossant/frame/#11-blind-joint)
 >
 > ![Frame](../../../static/img/frame-assembly/step1.PNG)
 

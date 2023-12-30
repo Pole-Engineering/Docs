@@ -6,7 +6,7 @@ sidebar_position: 5
 
 # 5. Electronics/Wiring
 ## Overview
- We have reached the electronics section, but first, carefully read the information below.
+ You have reached the electronics section, but first, carefully read the information below.
 
 ### AC Voltage
 
