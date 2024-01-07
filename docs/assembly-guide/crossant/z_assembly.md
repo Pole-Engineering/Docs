@@ -132,3 +132,5 @@ You can configure the printer with 3 different Z systems, but currently, only th
 >- It should look like this after assembly.
 >
 >![Z Axis](../../../static/img/z-assembly/join%20final.png)
+
+### c) Motor Assembly

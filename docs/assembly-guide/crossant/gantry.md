@@ -96,7 +96,7 @@ You've probably reached the most challenging part, the gantry assembly. Once we 
       <td></td>
     </tr>
     <tr>
-      <td>5mm OD 70mm Length Shaft </td>
+      <td>5mm OD 90mm Length Shaft </td>
       <td>4x</td>
       <td></td>
     </tr>
@@ -173,7 +173,7 @@ You've probably reached the most challenging part, the gantry assembly. Once we 
  >![Gantry](../../../static/img/gantry-assembly/motorassembly-a.png) 
  
 ### a) Coupling & Shaft
- > - First, secure the coupling to the motor shaft using the [3D printed coupling guide](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/joint_tensioner_x4.stl), and then push the 70mm shaft into the coupling as far as it can go and secure it.
+ > - First, secure the coupling to the motor shaft using the c, and then push the 90mm shaft into the coupling as far as it can go and secure it.
  > - This step is common for both assemblies and repeat this process for 4 times.
  >
  >![Gantry](../../../static/img/gantry-assembly/motorshaftassembly.png) 
@@ -229,14 +229,21 @@ You've probably reached the most challenging part, the gantry assembly. Once we 
  > - You can use M3x35mm screws to secure the XY joints to the rails.Also dont forget to mount the rail ends.
  >
  >![Gantry](../../../static/img/gantry-assembly/xyjoint-fix.png) 
- >
- >  - Now you can correct the extrusion positions.
+ > - You can now tighten the M4x6 bolts that secure the rails, but be careful not to overtighten; excessive force may cause the part to crack.
+ > - Now you can correct the extrusion positions.
 
   ### f) Shaft Supports and Motor Mounts Mounting
  > - We've come to assemble the shaft supports!
  > - As I mentioned in the [Motor Mounts](/docs/assembly-guide/crossant/gantry/#b-motor-mounts) section so pay attention to instructions.
+ > - When you look at the printer from the front, the top shaft support on the right rear is different from the one on the other end, and there are designated spaces on it for placing endstop switches.
  >
  >![Gantry](../../../static/img/gantry-assembly/top-shaft-supports.png) 
  >
  > - Mount the Top Shaft Support A to the front-left and rear-right, and Top Shaft Support B to the front-right and rear-left with using M4x8 bolts and T-Nuts, as specified.
+
+ ### g) Motor Mounts & Pulleys-Idlers
+ 
+ > - Secure the motor mounts to the frame using M4x20 bolts and M4 T-nuts.
+ >
+ >![Gantry](../../../static/img/gantry-assembly/motormount-mount.png) 
 

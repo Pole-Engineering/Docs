@@ -20,7 +20,7 @@ Before performing any tasks with AC voltage, please remember to wear insulated g
 >
 > Be careful not to touch AC voltage anywhere, as it can damage your components.
 > 
-> | Wire & cable   | US/Canada                   | Europe & UK   | China & Russia | Oceania       | Japan         | India         |
+> | Wire & cable  | US/Canada                   | Europe & UK   | China & Russia | Oceania       | Japan         | India         |
  | -------------- | --------------------------- | ------------- | -------------- | ------------- | ------------- | ------------- |
  | Live / Line    | ![black wire] ![red wire]   | ![brown wire] | ![yellow wire] | ![red wire]   | ![black wire] | ![red wire]   |
  | Neutral        | ![white wire] ![grey wire]  | ![blue wire]  | ![black wire]  | ![black wire] | ![white wire] | ![black wire] |
@@ -36,16 +36,31 @@ Before plugging in the printer, be sure to properly adjust the voltage setting o
 :::
 
 ### DC Voltage
-
->| Potential | Colour                        | Note     |
-| --------- | ----------------------------- | -------- |
-| Ground    | ![black wire]                 | Ground Lane |
-| 5V        | ![red wire]                   | 5V Lane  |
-| Signals   | ![white wire]                 | Signals  |
-| 12V       | ![yellow wire]                | 12V Lane |
-| 24V       | ![orange wire]                | 24V Lane |
-| 48V       | ![purple wire]  | 48V Lane |
+>When it comes to the DC voltage section, it's important to note that there is no globally standardized color code for DC voltage. We provided the color codes for better understanding of wiring diagrams, but you are not obligated to follow these colors when making connections.
 >
+>| Potential | Colour                       | Note        |
+| --------- | ----------------------------- | --------    |
+| Ground    | ![black wire]                 | Ground Lane |
+| 5V        | ![red wire]                   | 5V Lane     |
+| Signals   | ![white wire]                 | Signals     |
+| 12V       | ![yellow wire]                | 12V Lane    |
+| 24V       | ![orange wire]                | 24V Lane    |
+| 48V       | ![purple wire]                | 48V Lane    |
+
+### Wire Thickness
+>You should consider the currents that the cables will carry when selecting the thickness of the cables. You can refer to the table below to determine which thickness to use for each application.
+>
+>| Gauge     |     Section   |            Note                         |                  
+| --------- | --------------|-----------------------------------------| 
+| 14 AWG    | 1.5mm2        |Mostly used power lines                  |
+| 18 AWG    | 1mm2          |Used for heatbed and hotend              |
+| 24 AWG    | 0.5mm2        |Used for all other low voltage appliance |
+
+
+
+
+
+
 [black wire]: /img/electronics/wire-black.png
 [blue wire]: /img/electronics/wire-blue.png
 [brown wire]: /img/electronics/wire-brown.png
