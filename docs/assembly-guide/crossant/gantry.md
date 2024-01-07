@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 2. Gantry Assembly
 ## Overview
-You've probably reached the most challenging part, the gantry assembly. Once we get through this stage, there isn't much left to do!
+You've probably reached the most challenging part, the gantry assembly. Once you get through this stage, there isn't much left to do!
 
 ![Gantry](../../../static/img/gantry-assembly/gantry-preview.png)
 
@@ -185,7 +185,7 @@ You've probably reached the most challenging part, the gantry assembly. Once we 
  >![Gantry](../../../static/img/gantry-assembly/motormount1.PNG) 
   
   ### c) Top & Bottom Shaft Supports
- > - Next, you need to prepare the top and bottom shaft supports. We press-fit 625ZZ or 625RS2 bearings into the 3D printed parts to ensure a secure fit. Also, don't forget to prepare the M4x8 screws and T-nuts to secure the motor mounts to the frame.
+ > - Next, you need to prepare the top and bottom shaft supports. You will press-fit 625ZZ or 625RS2 bearings into the 3D printed parts to ensure a secure fit. Also, don't forget to prepare the M4x8 screws and T-nuts to secure the motor mounts to the frame.
  > - This step is common for both assemblies and repeat this process for all the top and bottom shaft supports.
  >
  >![Gantry](../../../static/img/gantry-assembly/topshear.png) 
@@ -196,7 +196,7 @@ You've probably reached the most challenging part, the gantry assembly. Once we 
  >
  >![Gantry](../../../static/img/gantry-assembly/fixed-rails-assembly.png) 
  > 
- > - Mount the rails to the locations shown in the lower photo, but do not tighten the bolts too much; we will adjust the exact positioning later.
+ > - Mount the rails to the locations shown in the lower photo, but do not tighten the bolts too much; you will adjust the exact positioning later.
  >
  >:::caution
  > - Mount the rails with carriage on it otherwise you wont be able to install the blocks.
@@ -233,7 +233,7 @@ You've probably reached the most challenging part, the gantry assembly. Once we 
  > - Now you can correct the extrusion positions.
 
   ### f) Shaft Supports and Motor Mounts Mounting
- > - We've come to assemble the shaft supports!
+ > - You've come to assemble the shaft supports!
  > - As I mentioned in the [Motor Mounts](/docs/assembly-guide/crossant/gantry/#b-motor-mounts) section so pay attention to instructions.
  > - When you look at the printer from the front, the top shaft support on the right rear is different from the one on the other end, and there are designated spaces on it for placing endstop switches.
  >
