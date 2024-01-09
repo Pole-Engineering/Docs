@@ -41,7 +41,7 @@ You've probably reached the most challenging part, the gantry assembly. Once you
       <td>The bolts for fixing the XY Joints to the rail blocks.</td>
     </tr>
     <tr>
-      <td>M3x25mm Sockethead Bolts</td>
+      <td>M3x20mm Sockethead Bolts</td>
       <td>20x</td>
       <td>The bolts for tensioners and motors.</td>
     </tr>
@@ -179,19 +179,19 @@ You've probably reached the most challenging part, the gantry assembly. Once you
  >![Gantry](../../../static/img/gantry-assembly/motorshaftassembly.png) 
 
  ### b) Motor Mounts
- > - Now, you need to mount the stepper motor to the [motor mount](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/xy_motor_mount_x4.stl) using four M3x25mm bolts. Also, don't forget to prepare the M4x20 screws and T-nuts to secure the motor mounts to the frame.
+ > - Now, mount the stepper motor to the [motor mount](https://github.com/Pole-Engineering/Crossant-235/blob/main/STLs/Gantry/xy_motor_mount_x4.stl) using four M3x20mm bolts. Also, don't forget to prepare the M4x20 screws and T-nuts to secure the motor mounts to the frame.
  > - This step is common for both assemblies and repeat this process for 4 times.
  >
  >![Gantry](../../../static/img/gantry-assembly/motormount1.PNG) 
   
   ### c) Top & Bottom Shaft Supports
- > - Next, you need to prepare the top and bottom shaft supports. You will press-fit 625ZZ or 625RS2 bearings into the 3D printed parts to ensure a secure fit. Also, don't forget to prepare the M4x8 screws and T-nuts to secure the motor mounts to the frame.
+ > - Next, prepare the top and bottom shaft supports. Press-fit 625ZZ or 625RS2 bearings into the 3D printed parts to ensure a secure fit. Also, don't forget to prepare the M4x8 screws and T-nuts to secure the motor mounts to the frame.
  > - This step is common for both assemblies and repeat this process for all the top and bottom shaft supports.
  >
  >![Gantry](../../../static/img/gantry-assembly/topshear.png) 
 
    ### d) Fixed Rails
- > - Prepare the bolts and T-nuts that will be used to secure the rails to the frame, you need to first get them ready for installation
+ > - Prepare the bolts and T-nuts that will be used to secure the rails to the frame, first get them ready for installation
  > - You need to prepare all the 4 fixed rails.
  >
  >![Gantry](../../../static/img/gantry-assembly/fixed-rails-assembly.png) 
@@ -213,12 +213,12 @@ You've probably reached the most challenging part, the gantry assembly. Once you
  >
  >![Gantry](../../../static/img/gantry-assembly/xy-joint.PNG) 
  >
- > - Now you can place the rail in position, but fully tightening the bolt may make the assembly more difficult. Tighten the bolt that secures the rail, but not completely.
+ > - Now place the rail in position, but fully tightening the bolt may make the assembly more difficult. Tighten the bolt that secures the rail, but not completely.
  >
  >![Gantry](../../../static/img/gantry-assembly/xy-joint-rail.PNG) 
  
  >:::caution
- > - To assemble the XY joints, you'll need to loosen and slide the extrusions marked in blue in the pictures below a bit.
+ > - To assemble the XY joints, loosen and slide the extrusions marked in blue in the pictures below a bit.
  >
  >![Gantry](../../../static/img/gantry-assembly/blue-extrusion.png) 
  >
@@ -226,11 +226,11 @@ You've probably reached the most challenging part, the gantry assembly. Once you
  >
  >![Gantry](../../../static/img/gantry-assembly/before-assembly.png) 
  >:::caution
- > - You can use M3x35mm screws to secure the XY joints to the rails.Also dont forget to mount the rail ends.
+ > - Use M3x35mm screws to secure the XY joints to the rails.Also dont forget to mount the rail ends.
  >
  >![Gantry](../../../static/img/gantry-assembly/xyjoint-fix.png) 
- > - You can now tighten the M4x6 bolts that secure the rails, but be careful not to overtighten; excessive force may cause the part to crack.
- > - Now you can correct the extrusion positions.
+ > - Now tighten the M4x6 bolts that secure the rails, but be careful not to overtighten; excessive force may cause the part to crack.
+ > - Now correct the extrusion positions.
 
   ### f) Shaft Supports and Motor Mounts Mounting
  > - You've come to assemble the shaft supports!
