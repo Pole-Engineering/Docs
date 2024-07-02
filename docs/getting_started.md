@@ -6,6 +6,6 @@ sidebar_position: 1
  
   You can find all the needed informations about all of our projects.We suggest you to follow the instructions and pay attention to them for better build experience.
   
-  ![Printer](../static/img/frame-assembly/printer-overview.png)
+  ![Printer](../static/img/mainrender.png)
 
 
