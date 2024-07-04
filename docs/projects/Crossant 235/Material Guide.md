@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Material Guide
-During the design process of the Crossant 3D printer, we took care to select materials that are readily available in the market and of sufficient quality to easily meet our needs. This is a major reason why the printer is budget-friendly.
+>During the design process of the Crossant 3D printer, we took care to select materials that are readily available in the market and of sufficient quality to easily meet our needs. This is a major reason why the printer is budget-friendly.
 
 ## BOM (Bill of Materials)
 
