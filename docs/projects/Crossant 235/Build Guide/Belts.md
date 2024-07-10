@@ -6,10 +6,9 @@ sidebar_position: 2
 
 >The Crossant has a total of four belts to facilitate XY movement. Two of these belts control the X-axis, while the other two control the Y-axis.
 >
->![Guide](../../../../static/img/assembly_guide.png)
+>In the image below, the belts shown in blue are the Y belts, while those shown in red are the X belts. It is crucial for the print quality that all four of these belts have the same tension. Now, let's talk a bit about belt tensioning.
+>![Guide](../../../../static/img/belts/belts.png)
 >
->In the image below, the belts shown in blue are the X belts, while those shown in red are the Y belts. It is crucial for the print quality that all four of these belts have the same tension. Now, let's talk a bit about belt tensioning.
-
 
 ## Belt Tensioning
 >Regardless of the type of printer you use, belt tension plays a significant role in your printer's performance. On this page, we will explain how tight the belt should be, how to measure the tension, and what can happen if the belt tension is too low or too high.
@@ -21,6 +20,3 @@ sidebar_position: 2
 
 ### How to Measure?
 >Since we measure in Hz, we won't go into lbs measurements. There are two options for measuring in Hz. The first is to use a tuning app that you can download to your phone, and the second is to use a physical tuning device. Both work in the same way. The measurement process is as follows: after ensuring a quiet environment, pluck the middle point of the belt at full span as if you were playing a guitar string, and then hold the phone close to the belt to measure the sound frequency emitted by the belt. That's all there is to it.
-
-
-7
