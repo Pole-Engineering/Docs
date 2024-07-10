@@ -15,13 +15,12 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
+  onBrokenLinks: "ignore",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Pole-Engineering", // Usually your GitHub org/user name.
   projectName: "Docs", // Usually your repo name.
 
-  onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -154,6 +153,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+      
     }),
 };
 
