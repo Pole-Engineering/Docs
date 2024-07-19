@@ -31,6 +31,8 @@ const config = {
     locales: ["en"],
   },
 
+
+  
   presets: [
     [
       "classic",
@@ -156,5 +158,7 @@ const config = {
       
     }),
 };
+
+
 
 module.exports = config;

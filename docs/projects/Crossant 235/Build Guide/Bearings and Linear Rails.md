@@ -11,7 +11,7 @@ sidebar_position: 2
 >
 >To lubricate the bearings, you can use grease. Here's how: Remove the rubber seals, apply a small amount of grease inside, reseal the bearings, spin them a few times by hand, and they'll be ready for assembly.
 >:::tip
->When passing the shafts on the gantry through the bearings, lubricate the shafts with a thin machine oil to prevent rust formation over time, which can cause the bearings to seize with the shaft.
+>When putting the shafts through out the bearings, lubricate the shafts with a thin machine oil to prevent rust formation over time, which can cause the bearings to seize with the shaft.
 
 ## Linear Rails
 > To ensure the best performance of the linear rails on your Crossant, it is crucial to properly clean and lubricate them. Here’s a step-by-step guide on how to do this:
