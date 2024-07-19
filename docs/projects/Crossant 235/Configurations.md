@@ -47,3 +47,7 @@ sidebar_position: 2
 - **Disadvantages:**
   - Slower Speed: Leadscrew systems move more slowly compared to belted systems.
   - Needs Maintenance: These systems needs to maintenance.
+  
+  # Frame
+
+  ## Default Frame vs Sidepack Frame
