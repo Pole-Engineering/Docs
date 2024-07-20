@@ -102,10 +102,6 @@ const config = {
                 to: "/docs/getting_started",
               },
               {
-                label: "FAQ",
-                to: "/docs/FAQ",
-              },
-              {
                 label: "Assembly Guide",
                 to: "/docs/category/assembly-guide",
               },
