@@ -39,6 +39,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+           
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -159,6 +160,15 @@ const config = {
     }),
 };
 
+module.exports = {
+  // ...
+  stylesheets: [
+    '/css/custom.css',
+  ],
+  scripts: [
+    '/js/custom.js',
+  ],
+};
 
 
 module.exports = config;

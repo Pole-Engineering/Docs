@@ -58,6 +58,6 @@ Output should look like this:
 ```
 
 # Printer Config File
->The ```printer.cfg ```file is a configuration file that allows you to make specific configuration changes on the printer, containing all the settings for the printer.
+>The ```printer.cfg``` file is a configuration file that allows you to make specific configuration changes on the printer, containing all the settings for the printer.
 >
 >You can click [here](https://github.com/Pole-Engineering/Crossant-235) to access custom ```cfg``` files created specifically for various motherboards compatible with Crossant.

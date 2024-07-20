@@ -83,3 +83,17 @@ p a:link,{
   background-color: rgb(10, 10, 10, 0.2);
 
 }
+
+.animatedImage {
+  animation: exampleAnimation 5s forwards;
+  opacity: 0;
+}
+
+.animatedImage.show {
+  opacity: 1;
+}
+
+@keyframes exampleAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

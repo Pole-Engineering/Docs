@@ -2,12 +2,17 @@
 sidebar_position: 3
 ---
 
+import belts from '/static/img/belts1.png';
+
 # Belts
 
 >The Crossant has a total of four belts to facilitate XY movement. Two of these belts control the X-axis, while the other two control the Y-axis.
 >
 >In the image below, the belts shown in blue are the Y belts, while those shown in red are the X belts. It is crucial for the print quality that all four of these belts have the same tension. Now, let's talk a bit about belt tensioning.
->![Guide](../../../../static/img/belts/belts.png)
+>
+<div style={{textAlign: 'center'}}>
+  <img src={belts} alt="overview" style={{width: 600, opacity: 1}}/>
+  </div>
 >
 
 ## Belt Tensioning

@@ -15,5 +15,5 @@ sidebar_position: 4
 ## Join Our  Community
 >Whether you possess the skills of a seasoned do-it-yourself expert or struggle to spell "3D," you are warmly invited to join our spirited community of makers. Together, let us embark on this exhilarating journey where mishaps with glue and imperfect prints are not just tolerated but celebrated as integral parts of the learning process.
 
-## Got Questions or Just Wanna Chat?W
+## Got Questions or Just Wanna Chat?
 >Feel free to connect with us anytime on Discord. We're enthusiastic about engaging in friendly conversations on topics ranging from do-it-yourself projects to 3D printing, and anything else that piques your interest.

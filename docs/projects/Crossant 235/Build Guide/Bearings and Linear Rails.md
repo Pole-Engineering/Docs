@@ -2,14 +2,15 @@
 sidebar_position: 2
 ---
 
+import belts from '/static/img/belts1.png';
 
 # Bearings and Linear Rails
 >Linear rails are a type of bearing. The Crossant uses linear rails for movement on each axis. Due to their working principles, linear rails and bearings require lubrication, and without it, they wear out over time and lose performance. On this page, we will discuss the terminology related to linear rails and bearings, as well as how to perform their maintenance.
 
 ## Bearings
 >For the Crossant, it's recommended to use 2RS bearings, as they feature rubber seals on both sides, making lubrication easier and helping to protect against contaminants.
->
->To lubricate the bearings, you can use grease. Here's how: Remove the rubber seals, apply a small amount of grease inside, reseal the bearings, spin them a few times by hand, and they'll be ready for assembly.
+>![bearing](../../../../static/img/bearings/bearings.png)
+>To lubricate the bearings remove the rubber seals that is highlighted with yellow using tweezer or something with sharp end, apply a small amount of grease inside the balls, reseal the bearings, spin them a few times by hand, and they'll be ready for assembly.
 >:::tip
 >When putting the shafts through out the bearings, lubricate the shafts with a thin machine oil to prevent rust formation over time, which can cause the bearings to seize with the shaft.
 
