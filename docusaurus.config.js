@@ -81,6 +81,7 @@ const config = {
           { to: "/configurator", label: "Configurator", position: "left" },
           { to: "/mods", label: "Mods", position: "left" },
           { to: "/gallery", label: "Gallery", position: "left" },
+          { to: "/faq", label: "FAQ", position: "left" },
           { to: "/about", label: "About", position: "left" },
 
           {
@@ -107,6 +108,10 @@ const config = {
               {
                 label: "Assembly Guide",
                 to: "/docs/category/assembly-guide",
+              },
+              {
+                label: "FAQ",
+                to: "/faq",
               },
               {
                 label: "About US",
