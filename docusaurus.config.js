@@ -77,7 +77,7 @@ const config = {
             position: "left",
             label: "Getting Started",
           },
-          { to: "/bom", label: "BOM", position: "left" },
+    
           { to: "/configurator", label: "Configurator", position: "left" },
           { to: "/mods", label: "Mods", position: "left" },
           { to: "/gallery", label: "Gallery", position: "left" },

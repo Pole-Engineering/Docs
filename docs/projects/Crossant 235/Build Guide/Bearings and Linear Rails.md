@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-import belts from '/static/img/belts1.png';
+
 
 # Bearings and Linear Rails
 >Linear rails are a type of bearing. The Crossant uses linear rails for movement on each axis. Due to their working principles, linear rails and bearings require lubrication, and without it, they wear out over time and lose performance. On this page, we will discuss the terminology related to linear rails and bearings, as well as how to perform their maintenance.

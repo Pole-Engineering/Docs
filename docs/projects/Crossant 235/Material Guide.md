@@ -162,5 +162,3 @@ Make sure that the extrusions you purchase are T-slot. Since the width of the MG
 
 
 
-
-
