@@ -95,13 +95,14 @@ The thickness of the cables you use should be suitable for the current they will
   # SBCs (Single Board Computers)
 >An SBC (Single Board Computer) is a simple computer that, when you install Klipper on it, allows you to control the printer. You can use models like Raspberry Pi, Orange Pi, and Banana Pi, but if you use SBCs specifically designed for this purpose, like the BTT Pi, you'll have more options as a source.
 >
+>
+><div style={{textAlign: 'center'}}>
+  <img src={sbc} alt="overview" style={{width: 1200, opacity: 1}}/>
+  </div>
+>
 >:::info
 If you are using the BTT Manta mainboard, you can use SBCs produced by BTT, such as the CB1, CB2, or even the Raspberry Pi CM4, which can be easily mounted on the Manta.s
 <div style={{textAlign: 'center'}}>
   <img src={cm4} alt="overview" style={{width: 500, opacity: 1}}/>
   </div>
 :::
->
-><div style={{textAlign: 'center'}}>
-  <img src={sbc} alt="overview" style={{width: 1200, opacity: 1}}/>
-  </div>
