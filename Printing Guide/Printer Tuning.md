@@ -6,7 +6,7 @@ import pid from '/static/img/pid.png';
 import heatgraph from '/static/img/heatgraph.png';
 
 # Printer Tuning
->There are certain guidelines you needss to follow to get high-quality prints and, more importantly, prints with accurate dimensions. We have compiled them for you on this page.
+>There are certain guidelines you need to follow to get high-quality prints and, more importantly, prints with accurate dimensions. We have compiled them for you on this page.
 
 ## Temperature
 >Different types of filament need to be printed within specific temperature ranges. For example, PLA should be printed at 200-220°C, while ABS should be printed at 230-260°C. To find the best value for the filament you have, you can print a temperature tower and observe the results to determine which temperature gives the best outcome.

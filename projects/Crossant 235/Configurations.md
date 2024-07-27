@@ -26,7 +26,7 @@ sidebar_position: 2
   - Difficulty in Modification: Rigid systems can make modifications more challenging.
 >
 >## Belted vs. Leadscrew Z
->### Belted Z :s
+>### Belted Z :
 >>- **Advantages:**
   - More Precise Z Axis: Belted systems offer a more precise Z axis.
   - **Fast Z-Hop Movements: These systems are capable of quicker Z-hop movements.

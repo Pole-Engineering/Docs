@@ -1,6 +1,14 @@
 ---
 sidebar_position: 4
 ---
+
+import mobo from '/static/img/mobo.png';
+import can from '/static/img/can.png';
+import sbc from '/static/img/sbc.png';
+import cm4 from '/static/img/cm4.png';
+
+
+
 # Electronics
 
 >When building a 3D printer, the electronics stage is where you are most likely to make mistakes. On this page, we will provide you with the necessary information to avoid harming yourself and your electronics.
@@ -20,9 +28,10 @@ You can use PSUs with lower wattage values, but drawing power close to the PSU's
 PSUs have a switch to toggle between 115V and 230V. It is crucial to set this switch to correct AC voltage rate.
 - If you select 230V in countries with 115V, your PSU will operate below its potential.
 - If you set 115V in countries with 230V, your PSU will destroy itself. (literally💥)
+
 >
->![voltageselector](../../../../static/img/electronics/voltage-selector.png)
-:::
+![voltageselector](../../../../static/img/psu.png)
+
 
 ## AC Heatbed
 >If you're using an AC heatbed, it's essential to use an SSR (Solid State Relay). Due to many counterfeit SSRs on the market, we recommend ensuring you purchase genuine, original SSRs to avoid potential issues.
@@ -66,3 +75,33 @@ The thickness of the cables you use should be suitable for the current they will
 | Hotend Heater  | 20 AWG  | 0.50 mm² |
 | Steppers       | 22 AWG  | 0.34 mm² |
 | Signal wires   | 24 AWG  | 0.25 mm² |
+
+# Mainboard Selection
+>Since the Crossant has a total of 8 motors, you should choose a mainboard with 8 driver slots. Alternatively, you could use two mainboards with fewer than 8 driver slots, but we do not recommend this.
+>
+>Since we aim for high speeds, you may prefer the STM32F446 chip. However the H729, have much higher MHz values compared to the F446 and F429, making them more suitable for a fast printer. Otherwise, you may encounter the ```MCU timer too close``` error.
+>
+><div style={{textAlign: 'center'}}>
+  <img src={mobo} alt="overview" style={{width: 700, opacity: 1}}/>
+  </div>
+
+# Canboards
+>Although CAN boards simplify toolhead wiring, they are likely to cause several problems. The biggest issue is their inability to withstand high chamber temperatures. Therefore, we do not recommend CAN boards for printers with a chamber, such as the Crossant.
+>
+><div style={{textAlign: 'center'}}>
+  <img src={can} alt="overview" style={{width: 1200, opacity: 1}}/>
+  </div>
+
+  # SBCs (Single Board Computers)
+>An SBC (Single Board Computer) is a simple computer that, when you install Klipper on it, allows you to control the printer. You can use models like Raspberry Pi, Orange Pi, and Banana Pi, but if you use SBCs specifically designed for this purpose, like the BTT Pi, you'll have more options as a source.
+>
+>:::info
+If you are using the BTT Manta mainboard, you can use SBCs produced by BTT, such as the CB1, CB2, or even the Raspberry Pi CM4, which can be easily mounted on the Manta.s
+<div style={{textAlign: 'center'}}>
+  <img src={cm4} alt="overview" style={{width: 500, opacity: 1}}/>
+  </div>
+:::
+>
+><div style={{textAlign: 'center'}}>
+  <img src={sbc} alt="overview" style={{width: 1200, opacity: 1}}/>
+  </div>
