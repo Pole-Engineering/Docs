@@ -18,6 +18,6 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <Redirect to='7docs/getting_started'  />
+    <Redirect to='/docs/getting_started'  />
   );
 }
