@@ -101,7 +101,7 @@ The thickness of the cables you use should be suitable for the current they will
   </div>
 >
 >:::info
-If you are using the BTT Manta mainboard, you can use SBCs produced by BTT, such as the CB1, CB2, or even the Raspberry Pi CM4, which can be easily mounted on the Manta.s
+If you are using the BTT Manta mainboard, you can use SBCs produced by BTT, such as the CB1, CB2, or even the Raspberry Pi CM4, which can be easily mounted on the Manta.
 <div style={{textAlign: 'center'}}>
   <img src={cm4} alt="overview" style={{width: 500, opacity: 1}}/>
   </div>
