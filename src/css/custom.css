@@ -3,11 +3,16 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+ @import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* You can override the default Infima variables here. */
+ /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #ffd800;
-  --ifm-color-primary-dark: #ffd800;
+    font-family: 'Montserrat' ;
+    font-weight:300;
+  --ifm-color-primary: #ffb201;
+  --ifm-color-primary-dark: #ffb201;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
@@ -16,10 +21,45 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
+.heading{
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+.table-of-contents__link {
+  font-family: 'montserrat';
+  font-weight: 450;
+}
+
+h1, .anchor {
+  font-family: 'kanit';
+  font-weight: 560;
+}
+
+.menu, .navbar__item{
+  font-family: 'montserrat';
+  font-weight: 600;
+}
+
+p a:link,{
+  text-decoration: underline;
+}
+
+.table-of-contents__link--active{
+  font-family: 'montserrat';
+  font-weight: 800;
+}
+
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #ffd800;
+  background: rgb(20,20,20);
+  background: linear-gradient(45deg, rgb(10, 10, 10)50%, rgb(37, 29, 2) 100%);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+
+;
+  --ifm-color-primary: #ffb201;
   --ifm-color-primary-dark: #ff8800;
   --ifm-color-primary-darker: #ff8800;
   --ifm-color-primary-darkest: rgb(145, 79, 3)00;
@@ -27,4 +67,33 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* .. */
+.navbar  {
+  background-color: rgb(10, 10, 10, 1);
+}
+.navbar-sidebar {
+  backdrop-filter: blur(5px);
+  background-color: rgb(10, 10, 10, 0.7);
+
+}
+.footer {
+  backdrop-filter: blur(5px);
+  background-color: rgb(10, 10, 10, 0.2);
+
+}
+
+.animatedImage {
+  animation: exampleAnimation 5s forwards;
+  opacity: 0;
+}
+
+.animatedImage.show {
+  opacity: 1;
+}
+
+@keyframes exampleAnimation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Pole Engineering",
@@ -14,14 +13,13 @@ const config = {
   url: "https://poleengineering.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/docs",
-
+  baseUrl: "/",
+  onBrokenLinks: "ignore",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Pole-Engineering", // Usually your GitHub org/user name.
   projectName: "Docs", // Usually your repo name.
 
-  onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -32,12 +30,15 @@ const config = {
     locales: ["en"],
   },
 
+
+  
   presets: [
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -45,6 +46,8 @@ const config = {
             "https://github.com/pole-engineering/Docs/tree/gh-pages/",
         },
         blog: {
+         
+
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -75,10 +78,11 @@ const config = {
             position: "left",
             label: "Getting Started",
           },
-          { to: "/bom", label: "BOM", position: "left" },
+    
           { to: "/configurator", label: "Configurator", position: "left" },
           { to: "/mods", label: "Mods", position: "left" },
           { to: "/gallery", label: "Gallery", position: "left" },
+          { to: "/faq", label: "FAQ", position: "left" },
           { to: "/about", label: "About", position: "left" },
 
           {
@@ -99,12 +103,12 @@ const config = {
                 to: "/docs/getting_started",
               },
               {
-                label: "FAQ",
-                to: "/docs/FAQ",
-              },
-              {
                 label: "Assembly Guide",
                 to: "/docs/category/assembly-guide",
+              },
+              {
+                label: "FAQ",
+                to: "/faq",
               },
               {
                 label: "About US",
@@ -154,7 +158,19 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+      
     }),
 };
+
+module.exports = {
+  // ...
+  stylesheets: [
+    '/css/custom.css',
+  ],
+  scripts: [
+    '/js/custom.js',
+  ],
+};
+
 
 module.exports = config;
