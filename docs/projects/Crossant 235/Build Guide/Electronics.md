@@ -79,7 +79,7 @@ The thickness of the cables you use should be suitable for the current they will
 # Mainboard Selection
 >Since the Crossant has a total of 8 motors, you should choose a mainboard with 8 driver slots. Alternatively, you could use two mainboards with fewer than 8 driver slots, but we do not recommend this.
 >
->Since we aim for high speeds, you may prefer the STM32F446 chip. However the H729, have much higher MHz values compared to the F446 and F429, making them more suitable for a fast printer. Otherwise, you may encounter the ```MCU timer too close``` error.
+>Since we aim for high speeds, you may prefer the STM32F446 or F429 chip. However the H723, have much higher MHz values compared to the F446 and F429, making them more suitable for a fast printer. Otherwise, you may encounter the ```MCU timer too close``` error.
 >
 ><div style={{textAlign: 'center'}}>
   <img src={mobo} alt="overview" style={{width: 700, opacity: 1}}/>

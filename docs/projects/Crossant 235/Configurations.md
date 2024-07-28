@@ -1,11 +1,12 @@
 ---
 sidebar_position: 2
+
 ---
 # Configuration
 
 # Z Axis
 >Crossant currently supports four different Z systems officially: rigid leadscrew Z, belted leadscrew Z, kinematic leadscrew Z, and kinematic belted Z. Here's a comparison of their advantages and disadvantages against each other, so you can choose the most suitable system for yourself:
->## Kinematic vs. Rigid Z Systems
+>## Kinematic vs. Rigid Z Systems 
 >In the rigid Z system, the bed is fixed to the Z joints via rodends, ensuring a secure attachment with bolts. In the kinematic Z system, [Maxwell coupling](https://en.wikipedia.org/wiki/Kinematic_coupling) allows the bed to be removed or adjusted without needing any bolts, facilitating easy detachment.
 >### Kinematic Z System:
 >>- **Advantages:**

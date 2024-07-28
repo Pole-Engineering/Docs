@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Pole Engineering",
@@ -39,7 +38,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-           
+          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -47,6 +46,8 @@ const config = {
             "https://github.com/pole-engineering/Docs/tree/gh-pages/",
         },
         blog: {
+         
+
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.

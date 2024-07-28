@@ -25,3 +25,6 @@ import belts from '/static/img/belts1.png';
 
 ### How to Measure?
 >Since we measure in HZ, we won't go into lbs measurements. There are two options for measuring in Hz. The first is to use a tuning app that you can download to your phone, and the second is to use a physical tuning device. Both work in the same way. The measurement process is as follows: after ensuring a quiet environment, pluck the middle point of the belt at full span as if you were playing a guitar string, and then hold the phone close to the belt to measure the sound frequency emitted by the belt.
+
+## Belt Lenghts
+>Crossant requires 4 belts for the XY axes and 3 belts for the Z-axis if using a belted Z system. Each XY belt should be 727mm~ long, and each belted Z belt should be 660mm~ long.

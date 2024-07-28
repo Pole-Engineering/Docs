@@ -4,6 +4,8 @@ sidebar_position: 1
 
 import extrusions from '/img/extrusions.png';
 import terminology from '/img/terminology.png';
+import fasteners from '/img/fasteners.png';
+import tools from '/img/tools.png';
 
 # Material Guide
 >During the design process of the Crossant 3D printer, we took care to select materials that are readily available in the market and of sufficient quality to easily meet our needs. This is a major reason why the printer is budget-friendly.
@@ -15,6 +17,10 @@ import terminology from '/img/terminology.png';
 
 ### Fasteners
 >In the [fasteners BOM](https://docs.google.com/spreadsheets/d/1u00vXnCiODAP5KC5nTiRgINJnbgC2SU4T4h_pg1mv24/edit?gid=67070895#gid=67070895), like in the regular BOM, it specifies where to source the different fasteners based on the various configurations. This document is also a work in progress (WIP).
+>
+><div style={{textAlign: 'center'}}>
+  <img src={fasteners} alt="overview" style={{width: 1000, opacity: 1}}/>
+</div>
 
 ## Extrusions
 
@@ -67,12 +73,12 @@ Make sure that the extrusions you purchase are T-slot. Since the width of the MG
     <tr>
       <td>Layer Height</td>
       <td>0.2mm</td>
-      <td>0.28mm</td>
+      <td>0.2mm</td>
     </tr>
     <tr>
       <td>Line Width</td>
       <td>0.4mm</td>
-      <td>0.5mm</td>
+      <td>0.4mm</td>
     </tr>
     <tr>
       <td>Wall Count</td>
@@ -158,6 +164,10 @@ Make sure that the extrusions you purchase are T-slot. Since the width of the MG
 > - Locksmith Angle
 > - Wire Stripper
 > - Soldering Iron _(Not mandatory but good to have one)_
+> 
+> <div style={{textAlign: 'center'}}>
+  <img src={tools} alt="overview" style={{width: 1000, opacity: 1}}/>
+</div>
 
 
 
