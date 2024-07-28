@@ -1,5 +1,6 @@
 import jst from '/img/jst.png';
 import direction from '/img/direction.png';
+import zsteppers from '/img/zsteppers.png';
 
 
 ## Endstops
@@ -116,3 +117,21 @@ endstop_pin: PG9
 > <div style={{textAlign: 'center'}}>
   <img src={direction} alt="overview" style={{width: 1200, opacity: 1}}/>
 </div>
+
+## Z Steppers
+
+### Defining the Steppers
+>For the Z tilt macros to work correctly, the motors must be properly defined in the configuration. On the Crossant, the rear motor is (Z), front left is (Z1) and front right one is (Z2). Use the `STEPPER_BUZZ` command to identify which motor is which and correct any errors in the configuration file if needed.
+>
+><div style={{textAlign: 'center'}}>
+  <img src={zsteppers} alt="overview" style={{width: 1200, opacity: 1}}/>
+</div>
+
+### Z Tilt
+>With the triple Z system used in the Crossant, you can automatically level the bed using the Z tilt command.
+>
+>When performing Z tilt calibration, the toolhead will take a specified number of samples from the designated points and attempt to achieve the tolerance value indicated in the configuration.
+ - Level the bed by:
+ ```shell
+Z_TILT_CALIBRATE
+ ```
