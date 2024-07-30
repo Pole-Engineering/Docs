@@ -21,7 +21,6 @@ import coolingfans from '/img/coolingfans.png';
 =======
 ## Cooling Fans
 >There are four types of cooling fans you can use, each with its own advantages and disadvantages. Below, you can find what these fans are:
->>>>>>> development
 
 ### WS7040
 >Since WS7040 is not mounted on the toolhead, the weight impact is only that of the CPAP hose carrying the air from the fan to the toolhead. The noise level is high, but the air pressure is quite substantial.
@@ -42,4 +41,4 @@ import coolingfans from '/img/coolingfans.png';
 >The Roborock fan we refer to is actually the fan that provides suction for Roborock brand robot vacuums. While it shares many features with the WS7040, you need to make or have a driver for the Roborock fan made through a PCB production site like JLCPCB using a Gerber file. Although the total cost is lower than the WS7040, it is a bit more labor-intensive. However, in the end, both deliver very similar performance.
 
 ### Delta 4028
->>>>>>> development
+
