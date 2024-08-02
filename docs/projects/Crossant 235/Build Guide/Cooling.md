@@ -18,7 +18,7 @@ import coolingfans from '/img/coolingfans.png';
 ><div style={{textAlign: 'center'}}>
   <img src={coolingfans} alt="overview" style={{width: 1000, opacity: 1}}/>
   </div>
-=======
+
 ## Cooling Fans
 >There are four types of cooling fans you can use, each with its own advantages and disadvantages. Below, you can find what these fans are:
 
