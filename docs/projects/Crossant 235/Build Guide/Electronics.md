@@ -68,11 +68,11 @@ Being exposed to AC electricity is extremely risky for your health. When working
 The thickness of the cables you use should be suitable for the current they will carry. If you attempt to exceed the maximum current rating of a cable, it can overheat and melt over time, potentially causing a fire. Always ensure that the current passing through your cables does not exceed their rated amperage.
 :::
 >
-| Application    | AWG     | Metric   |
+| Application    | AWG     | Metric   |s
 | -------------- | ------- | -------- |
 | DC Bed Heater  | 16 AWG  | 1.50 mm² |
 | AC Line        | 18 AWG  | 1 mm²    |
-| Hotend Heater  | 20 AWG  | 0.50 mm² |
+| Hotend Heater  | 18 AWG  | 0.50 mm² |
 | Steppers       | 22 AWG  | 0.34 mm² |
 | Signal wires   | 24 AWG  | 0.25 mm² |
 
