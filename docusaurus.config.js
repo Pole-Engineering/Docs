@@ -188,13 +188,14 @@ const config = {
 };
 
 module.exports = {
+  plugins: [
+    // ...
+    "@aldridged/docusaurus-plugin-lunr",
+    require.resolve("docusaurus-lunr-search"),
+  ],
   // ...
-  stylesheets: [
-    '/css/custom.css',
-  ],
-  scripts: [
-    '/js/custom.js',
-  ],
+  stylesheets: ["/css/custom.css"],
+  scripts: ["/js/custom.js"],
 };
 
 
