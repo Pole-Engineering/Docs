@@ -34,10 +34,3 @@ import coolingfans from '/img/coolingfans.png';
 ### Delta 4028
 >The Delta 4028, commonly referred to as a server fan, generates a significantly high air pressure as well. Nevertheless, its mounting on the toolhead introduces additional mass to the system, consequently deteriorating the input shaper results.
 
-=======
-### Roborock
->The Roborock fan we refer to is actually the fan that provides suction for Roborock brand robot vacuums. While it shares many features with the WS7040, you need to make or have a driver for the Roborock fan made through a PCB production site like JLCPCB using a Gerber file. Although the total cost is lower than the WS7040, it is a bit more labor-intensive. However, in the end, both deliver very similar performance.
-=======
-
-
-### Delta 4028
