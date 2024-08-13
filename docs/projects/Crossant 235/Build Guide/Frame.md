@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 import frame from '/static/img/frames.png';
 import blindjoints from '/static/img/blindjoints.png';
