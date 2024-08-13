@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-import Overview from '/img/overview.webp';
+import Overview from '/img/overview.png';
 
 # Getting Started 
   Welcome to the Pole Engineering's documentation site.
