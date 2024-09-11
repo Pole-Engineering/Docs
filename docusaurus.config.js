@@ -5,6 +5,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+
   title: "Pole Engineering",
   tagline: "Fast Forward IRL",
   favicon: "img/favicon.ico",
@@ -60,10 +61,10 @@ const config = {
     ({
       algolia: {
         // The application ID provided by Algolia
-        appId: "LJ3565G2XN",
+        appId: "XQ9XAYXM4G",
 
         // Public API key: it is safe to commit it
-        apiKey: "7bd17f6cdc86234ae432961cf8c61ef5",
+        apiKey: "20e4c40c8efd994aa1d29bf48ab3b945",
 
         indexName: "Pole",
 
@@ -188,10 +189,6 @@ const config = {
 };
 
 module.exports = {
-  plugins: [
-    // ...
-  
-  ],
   // ...
   stylesheets: ["/css/custom.css"],
   scripts: ["/js/custom.js"],
