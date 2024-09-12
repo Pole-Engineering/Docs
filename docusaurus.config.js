@@ -63,9 +63,9 @@ const config = {
         appId: "XQ9XAYXM4G",
 
         // Public API key: it is safe to commit it
-        apiKey: "eb1c10bca4633fbbb4fb586c332f7349",
+        apiKey: "734ce56d3c41999b726e61874c5612da",
 
-        indexName: "Pole",
+        indexName: "crawler_pole",
 
         // Optional: see doc section below
         contextualSearch: false,

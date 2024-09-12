@@ -97,3 +97,12 @@ p a:link,{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+.DocSearch-Footer {
+  display: none !important;
+}
+.DocSearch-Dropdown {
+ backdrop-filter: blur(6px) !important;
+}
+.DocSearch-Form {
+  border-radius: 1rem !important;
+}
