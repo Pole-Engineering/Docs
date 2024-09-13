@@ -109,11 +109,14 @@ p a:link,{
 }
 .DocSearch-Modal,.DocSearch-Hit-source
  {
-  background-color: rgba(255, 0, 0, 0.0) !important;
-  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  backdrop-filter: blur(2rem);
   box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.645) !important;
   border-radius: 1rem !important;
-
+}
+.DocSearch-Modal {
+  border: .2rem #ff8800 !important;
+  border-style:!important;
 
 }
 .DocSearch-Button {
@@ -126,4 +129,8 @@ p a:link,{
 }
 body.DocSearch--active {
   overflow: auto !important;
+}
+.DocSearch-Hit--Child>a, .DocSearch-Hit, .DocSearch-Hit-Container, .DocSearch-Hits, section>.DocSearch-Hits, li>.DocSearch-Hit {
+  background-color: rgba(255, 255, 255, 0) !important;
+  backdrop-filter: blur(10px) !important;
 }
