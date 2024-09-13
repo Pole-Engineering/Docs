@@ -97,7 +97,8 @@ p a:link,{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.DocSearch-Footer {
+.DocSearch-Footer, .DocSearch-Button-Keys
+ {
   display: none !important;
 }
 .DocSearch-Dropdown {
@@ -105,4 +106,24 @@ p a:link,{
 }
 .DocSearch-Form {
   border-radius: 1rem !important;
+}
+.DocSearch-Modal,.DocSearch-Hit-source
+ {
+  background-color: rgba(255, 0, 0, 0.0) !important;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.645) !important;
+  border-radius: 1rem !important;
+
+
+}
+.DocSearch-Button {
+  border-radius: .5rem !important;
+}
+.DocSearch-Container {
+  background-color: rgba(255, 0, 0, 0.0) !important;
+  margin-top: 3rem !important;
+  
+}
+body.DocSearch--active {
+  overflow: auto !important;
 }
