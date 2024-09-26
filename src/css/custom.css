@@ -136,3 +136,6 @@ body.DocSearch--active {
 .token.comment {
   color: rgb(121, 135, 175);
 }
+.token.plain {
+  color: #79f381 !important;
+} 

@@ -1,107 +1,73 @@
+import placeholder from '/static/img/placeholder.png';
 
+# Extruder Calibration
 Extruder calibration is simply the process of ensuring that when you command the printer to extrude 100mm of filament, it actually extrudes exactly 100mm. Don’t confuse this with the [extrusion multiplier](asd); one is a printer setting, while the other is a filament-specific adjustment.
 
-# How to Tune?
-- Let the printer to extrude 101mm or higher.
-```properties title="printer.cfg"
-#####################################################################
-#   A better print_start macro for v2/trident
-#####################################################################
+## How to Calibrate?
+You can follow the instructions below to calibrate your extruder.
 
-## *** THINGS TO UNCOMMENT: ***
-## Bed mesh (2 lines at 2 locations)
-## Nevermore (if you have one)
-## Z_TILT_ADJUST (For Trident only)
-## QUAD_GANTRY_LEVEL (For V2.4 only)
-## Beacon Contact logic (if you have one. 4 lines at 4 locations)
+- ### a) Let the printer to extrude 101mm or higher.
+   - ```properties title="printer.cfg"
+    ##########################################################################################
+    ##  Define "max_extrude_only_distance" to extruder section and set it to "101" or more  ##
+    ##########################################################################################
 
-[gcode_macro PRINT_START]
-gcode:
-  # This part fetches data from your slicer. Such as bed, extruder, and chamber temps and size of your printer.
-  {% set target_bed = params.BED|int %}
-  {% set target_extruder = params.EXTRUDER|int %}
-  {% set target_chamber = params.CHAMBER|default("45")|int %}
-  {% set x_wait = printer.toolhead.axis_maximum.x|float / 2 %}
-  {% set y_wait = printer.toolhead.axis_maximum.y|float / 2 %}
+     [extruder]
+    #step_pin: PG12
+    #dir_pin: PG11
+    #enable_pin: !PG13
+    #microsteps: 16
+    #rotation_distance: 33.500
+    #nozzle_diameter: 0.400
+    max_extrude_only_distance:101
+    #filament_diameter: 1.750
+    #heater_pin: PB1 # Heat0
+    #sensor_pin:  PC1 # T0 Header
+    #sensor_type: EPCOS 100K B57560G104F
+    ``` 
+- ### b) Heat up your hotend.
+  - ```properties title="Console"
+    ###############################################################
+    ##  Change the [XXX] to the temperature you want to heat up  ##
+    ###############################################################
 
-  ##  Uncomment for Beacon Contact (1 of 4 for beacon contact)
-  #SET_GCODE_OFFSET Z=0                                 # Set offset to 0
+    M104 S[XXX]             ; Heat up the hotend to [XXX]c° 
+    ```
+  - :::info Cold Tuning
+  You can calibrate your extruder while the nozzle is cold but that requires to *removing the nozzle* for the direct drive and *removing ptfe tube* for the bowden setup.
+  You need to define `min_extrude_temp:0`under `[extruder]` section in the `printer.cfg`
+  :::
 
-  # Home the printer, set absolute positioning and update the Stealthburner LEDs.
-  STATUS_HOMING                                         # Set LEDs to homing-mode
-  G28                                                   # Full home (XYZ)
-  G90                                                   # Absolute position
+- ## c) Extrude a bit to enable the stepper.
+   
+  - ```properties title="Console"
+    M83             ; Set extruder to relative mode
+    G1 E5 F50       ; Extrude 5mm
+    ```      
 
-  ##  Uncomment for bed mesh (1 of 2 for bed mesh)
-  #BED_MESH_CLEAR                                       # Clear old saved bed mesh (if any)
+- ### d) Use your caliper to place a piece of tape to desired lenght, for example 110mm.
 
-  # Check if the bed temp is higher than 90c - if so then trigger a heatsoak.
-  {% if params.BED|int > 90 %}
-    SET_DISPLAY_TEXT MSG="Bed: {target_bed}c"           # Display info on display
-    STATUS_HEATING                                      # Set LEDs to heating-mode
-    M106 S255                                           # Turn on the PT-fan
+  - <div style={{textAlign: 'center'}}>
+    <img src={placeholder} alt="overview" style={{width: 1000, opacity: 1}}/>
+    </div>
 
-    ##  Uncomment if you have a Nevermore.
-    #SET_PIN PIN=nevermore VALUE=1                      # Turn on the nevermore
+   - :::tip
+If you're going to do calibration over 100mm, tape is confined to 110mm. This way, while extruding filament, you'll prevent the tape from getting inside the extruder.
+:::
 
-    G1 X{x_wait} Y{y_wait} Z15 F9000                    # Go to center of the bed
-    M190 S{target_bed}                                  # Set the target temp for the bed
-    SET_DISPLAY_TEXT MSG="Heatsoak: {target_chamber}c"  # Display info on display
-    TEMPERATURE_WAIT SENSOR="temperature_sensor chamber" MINIMUM={target_chamber}   # Waits for chamber temp
-
-  # If the bed temp is not over 90c, then skip the heatsoak and just heat up to set temp with a 5 min soak
-  {% else %}
-    SET_DISPLAY_TEXT MSG="Bed: {target_bed}c"           # Display info on display
-    STATUS_HEATING                                      # Set LEDs to heating-mode
-    G1 X{x_wait} Y{y_wait} Z15 F9000                    # Go to center of the bed
-    M190 S{target_bed}                                  # Set the target temp for the bed
-    SET_DISPLAY_TEXT MSG="Soak for 5 min"               # Display info on display
-    G4 P300000                                          # Wait 5 min for the bedtemp to stabilize
-  {% endif %}
-
-  # Heat hotend to 150c. This helps with getting a correct Z-home.
-  SET_DISPLAY_TEXT MSG="Hotend: 150c"                   # Display info on display
-  M109 S150                                             # Heat hotend to 150c
-
-  ##  Uncomment for Beacon contact (2 of 4 for beacon contact)
-  #G28 Z METHOD=CONTACT CALIBRATE=1                     # Calibrate z offset and beacon model
-
-  ##  Uncomment for Trident (Z_TILT_ADJUST)
-  #SET_DISPLAY_TEXT MSG="Leveling"                      # Display info on display
-  #STATUS_LEVELING                                      # Set LEDs to leveling-mode
-  #Z_TILT_ADJUST                                        # Level the printer via Z_TILT_ADJUST
-  #G28 Z                                                # Home Z again after Z_TILT_ADJUST
-
-  ##  Uncomment for V2.4 (Quad gantry level AKA QGL)
-  #SET_DISPLAY_TEXT MSG="Leveling"                      # Display info on display
-  #STATUS_LEVELING                                      # Set LEDs to leveling-mode
-  #QUAD_GANTRY_LEVEL                                    # Level the printer via QGL
-  #G28 Z                                                # Home Z again after QGL
-
-  ##  Uncomment for bed mesh (2 of 2 for bed mesh)
-  #SET_DISPLAY_TEXT MSG="Bed mesh"                      # Display info on display
-  #STATUS_MESHING                                       # Set LEDs to bed mesh-mode
-  #BED_MESH_CALIBRATE                                   # Start the bed mesh (add ADAPTIVE=1) for adaptive bed mesh
-
-  ## Uncomment for Beacon Contact (3 of 4 for beacon contact)
-  #G28 Z METHOD=CONTACT CALIBRATE=0                     # Calibrate z offset only with hot nozzle
-
-  # Heat up the hotend up to target via data from slicer
-  SET_DISPLAY_TEXT MSG="Hotend: {target_extruder}c"     # Display info on display
-  STATUS_HEATING                                        # Set LEDs to heating-mode
-  G1 X{x_wait} Y{y_wait} Z15 F9000                      # Go to center of the bed
-  M107                                                  # Turn off partcooling fan
-  M109 S{target_extruder}                               # Heat the hotend to set temp
-
-  ##   Uncomment for Beacon Contact (4 of 4 for beacon contact)
-  #SET_GCODE_OFFSET Z=0.06                              # Add a little offset for hotend thermal expansion
-
-  # Get ready to print by doing a primeline and updating the LEDs
-  SET_DISPLAY_TEXT MSG="Printer goes brr"               # Display info on display
-  STATUS_PRINTING                                       # Set LEDs to printing-mode
-  G0 X{x_wait - 50} Y4 F10000                           # Go to starting point
-  G0 Z0.4                                               # Raise Z to 0.4
-  G91                                                   # Incremental positioning 
-  G1 X100 E20 F1000                                     # Primeline
-  G90                                                   # Absolute position
-``` 
+- ### e) Extrude 100mms of filament.
+    - ```properties title="Console"
+    G1 E100 F60       ; Extrude 100mm
+    ```      
+- ### f) Measure the distance between the tape and extruder.
+-   lorem ipsum
+    - <div style={{textAlign: 'center'}}>
+      <img src={placeholder} alt="overview" style={{width: 1000, opacity: 1}}/>
+      </div>
+    
+    - :::caution
+    asd
+    :::
+## How to Calculate?
+### Manual Method
+### Automated Method
