@@ -9,10 +9,7 @@
 
  /* You can override the default Infima variables here. */
 :root {
-    font-family: 'Montserrat' 
-    ;
-    --docusaurus-highlighted-code-line-bg: rgb(0, 0, 0);
-
+    font-family: 'Montserrat' ;
     font-weight:300;
   --ifm-color-primary: #ffb201;
   --ifm-color-primary-dark: #ffb201;
@@ -100,13 +97,42 @@ p a:link,{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-.docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+.DocSearch-Footer, .DocSearch-Button-Keys
+ {
+  display: none !important;
 }
+.DocSearch-Dropdown {
+ backdrop-filter: blur(6px) !important;
+}
+.DocSearch-Form {
+  border-radius: 1rem !important;
+}
+.DocSearch-Modal,.DocSearch-Hit-source
+ {
+  background-color: rgba(255, 0, 0, 0.0) !important;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.645) !important;
+  border-radius: 1rem !important;
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+
+}
+.DocSearch-Button {
+  border-radius: .5rem !important;
+}
+.DocSearch-Container {
+  background-color: rgba(255, 0, 0, 0.0) !important;
+  margin-top: 3rem !important;
+  
+}
+body.DocSearch--active {
+  overflow: auto !important;
+}
+.token.key {
+  color: #df79f3 !important;
+} 
+.token.value {
+  color: #ffed9c;
+}
+.token.comment {
+  color: rgb(121, 135, 175);
 }
