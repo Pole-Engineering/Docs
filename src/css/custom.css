@@ -9,7 +9,10 @@
 
  /* You can override the default Infima variables here. */
 :root {
-    font-family: 'Montserrat' ;
+    font-family: 'Montserrat' 
+    ;
+    --docusaurus-highlighted-code-line-bg: rgb(0, 0, 0);
+
     font-weight:300;
   --ifm-color-primary: #ffb201;
   --ifm-color-primary-dark: #ffb201;
@@ -96,4 +99,14 @@ p a:link,{
 @keyframes exampleAnimation {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
 }

@@ -3,7 +3,7 @@ Extruder calibration is simply the process of ensuring that when you command the
 
 # How to Tune?
 - Let the printer to extrude 101mm or higher.
-```jsx
+```properties title="printer.cfg"
 [extruder]  
 max_extrude_only_distance: 101
 ``` 

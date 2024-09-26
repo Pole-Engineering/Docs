@@ -178,11 +178,14 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["bash", "python", "gcode", "properties"],
+
       },
       colorMode: {
         defaultMode: "dark",
         disableSwitch: true,
         respectPrefersColorScheme: false,
+        
       },
     }),
 };
