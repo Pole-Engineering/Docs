@@ -5,12 +5,17 @@
  */
  @import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mina:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+ @font-face {
+  font-family: 'kenyan';
+  src: url('/static/AVGARDD.TTF');
+}
  /* You can override the default Infima variables here. */
 :root {
-    font-family: 'Montserrat' ;
+    font-family: 'montserrat' ;
     font-weight:300;
+    font-stretch:ultra-condensed;
   --ifm-color-primary: #ffb201;
   --ifm-color-primary-dark: #ffb201;
   --ifm-color-primary-darker: #277148;
@@ -22,7 +27,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 .heading{
-  font-family: 'Montserrat';
+  font-family: 'bebas neue';
   font-weight: 600;
 }
 
@@ -31,10 +36,42 @@
   font-weight: 450;
 }
 
-h1, .anchor {
-  font-family: 'kanit';
-  font-weight: 560;
+h1, h2.anchor {
+  font-family: 'bebas neue';
+  font-weight: 400;
 }
+h1 {
+  font-size-adjust: 1;
+} al
+
+h2.anchor {
+  font-family: 'bebas neue';
+  font-weight: 400;
+  font-size-adjust:1;
+}
+
+h3 {
+  font-family: 'bebas neue';
+  font-weight: 60;
+}
+
+h2 {
+  font-size-adjust: 1.1;
+}
+
+.text--truncate{
+  font-family: 'montserrat';
+  font-size-adjust: .6;
+}
+
+h3 {
+  font-size-adjust: 0.8;
+  font-family: 'bebas neue';
+}
+h4 {
+  font-size-adjust: 0.8;
+}
+
 
 .menu, .navbar__item{
   font-family: 'montserrat';
@@ -139,3 +176,8 @@ body.DocSearch--active {
 .token.plain {
   color: #79f381 !important;
 } 
+.katex {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+

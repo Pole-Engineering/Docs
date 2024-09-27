@@ -38,7 +38,7 @@ You can follow the instructions below to calibrate your extruder.
   You need to define `min_extrude_temp:0`under `[extruder]` section in the `printer.cfg`
   :::
 
-- ## c) Extrude a bit to enable the stepper.
+- ### c) Extrude a bit to enable the stepper.
    
   - ```properties title="Console"
     M83             ; Set extruder to relative mode
@@ -52,7 +52,7 @@ You can follow the instructions below to calibrate your extruder.
     </div>
 
    - :::tip
-If you're going to do calibration over 100mm, tape is confined to 110mm. This way, while extruding filament, you'll prevent the tape from getting inside the extruder.
+For example, if you're going to do calibration over 100mm, place the tape to 110mm. This way, while extruding filament, you'll prevent the tape from getting inside the extruder.
 :::
 
 - ### e) Extrude 100mms of filament.
@@ -66,9 +66,92 @@ If you're going to do calibration over 100mm, tape is confined to 110mm. This wa
       <img src={placeholder} alt="overview" style={{width: 1000, opacity: 1}}/>
       </div>
     
-    - :::caution
-    asd
-    :::
 ## How to Calculate?
+We offer you two different options to calculate your new rotation distance. The first option allows you to calculate it by plugging your measured values into the formula, while the second option provides a Klipper macro.
+
 ### Manual Method
+You can use the simple formula below to calculate the rotation distance:
+  $$ 
+  New Rotation Distance = {(Current Rotation Distance × Requested Length) \over (Measured Filament Length - 10)} 
+  $$
+  
+:::caution
+Don't forget that you placed the tape 10 mm higher than where it should be, so you need to subtract 10 mm from the measured filament length.
+:::
+- ### Calculation
+   When we plug the actual values into the formula:
+    $$ 
+    New Rotation Distance = {(24.3 × 100) \over (107 - 10) } = {2430 \over 97 } = 25,05154639175
+    $$
+
+  ```properties title="printer.cfg"
+    ##############################################################
+    ##  Replace current "rotation distance" with the new value  ##
+    ##############################################################
+    [extruder]
+     #step_pin: PG12
+    #dir_pin: PG11
+    #enable_pin: !PG13
+    #microsteps: 16
+    rotation_distance: 25.051         ; Replace the rotation distance value
+    #nozzle_diameter: 0.400
+    #max_extrude_only_distance:101
+    #filament_diameter: 1.750
+    #heater_pin: PB1 # Heat0
+    #sensor_pin:  PC1 # T0 Header
+    #sensor_type: EPCOS 100K B57560G104F
+    ```
+
 ### Automated Method
+
+If you use the macros below, the macro itself will handle tasks like heating the hotend and extruding filament. You just need to input the starting values for temperature and the requested filament length. In the other macro, you enter the measured length and how many millimeters were extruded, and the macro will calculate the new rotation distance for you. The new rotation distance will be displayed in the console.
+  - ### Calibrate Macro
+  ```properties title="printer.cfg"
+    ##############################################################
+    ##  Replace current "rotation distance" with the new value  ##
+    ##############################################################
+    [gcode_macro _load_unload]
+    gcode:
+      {% set saved_extruder = printer.toolhead.extruder %}
+      {% set EXTRUDER = params.EXTRUDER|default(saved_extruder)|lower %}
+      {% set km = printer["gcode_macro _km_globals"] %}
+      # Use the global min as default if provided, else use per extruder min + 5.
+      {% set default_minimum = km.load_min_temp if km.load_min_temp else
+            (printer.configfile.settings[EXTRUDER].min_extrude_temp + 5) %}
+      {% if 'MINIMUM' in params %}
+        {% set MINIMUM = params.MINIMUM|int %}
+      # This is the special case for a filament change after an idle timeout.
+      {% elif printer.pause_resume.is_paused and printer[EXTRUDER].target == 0 and
+              printer["gcode_macro resume"].saved_extruder_temp %}
+        {% set MINIMUM = printer["gcode_macro resume"].saved_extruder_temp %}
+      # Use the target temp if higher than the default.
+      {% elif printer[EXTRUDER].target > default_minimum %}
+        {% set MINIMUM = printer[EXTRUDER].target %}
+      {% else %}
+        {% set MINIMUM = default_minimum %}
+      {% endif %}
+      {% if MINIMUM < printer.configfile.settings[EXTRUDER].min_extrude_temp %}
+        { action_raise_error("Extrude below minimum temp.") }
+      {% elif printer.pause_resume.is_paused %}
+        # Clear the saved E if we're (un-)loading while paused.
+        SET_GCODE_VARIABLE MACRO=resume VARIABLE=saved_e VALUE="{0.0}"
+
+   - ### Calculator Macro
+  ```properties title="printer.cfg"
+    ##############################################################
+    ##  Replace current "rotation distance" with the new value  ##
+    ##############################################################
+    [gcode_macro _load_unload]
+    gcode:
+      {% set saved_extruder = printer.toolhead.extruder %}
+      {% set EXTRUDER = params.EXTRUDER|default(saved_extruder)|lower %}
+      {% set km = printer["gcode_macro _km_globals"] %}
+      # Use the global min as default if provided, else use per extruder min + 5.
+      {% set default_minimum = km.load_min_temp if km.load_min_temp else
+            (printer.configfile.settings[EXTRUDER].min_extrude_temp + 5) %}
+      {% if 'MINIMUM' in params %}
+        {% set MINIMUM = params.MINIMUM|int %}
+      # This is the special case for a filament change after an idle timeout.
+      {% elif printer.pause_resume.is_paused and printer[EXTRUDER].target == 0 and
+              printer["gcode_macro resume"].saved_extruder_temp %}
+ 
