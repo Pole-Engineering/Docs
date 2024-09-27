@@ -60,7 +60,8 @@ If you're going to do calibration over 100mm, tape is confined to 110mm. This wa
     G1 E100 F60       ; Extrude 100mm
     ```      
 - ### f) Measure the distance between the tape and extruder.
--   lorem ipsum
+-   Measure the distance between the filament entry point of the extruder and the tape using calipers. In our example, we marked it at 110 mm and extruded 100 mm of filament. The measured distance came out to be 97.6 mm.
+
     - <div style={{textAlign: 'center'}}>
       <img src={placeholder} alt="overview" style={{width: 1000, opacity: 1}}/>
       </div>
