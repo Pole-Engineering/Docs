@@ -43,7 +43,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/pole-engineering/Docs/tree/gh-pages/",
           remarkPlugins: [math],
-          rehypePlugins: [katex],
+          rehypePlugins: [katex],          
         },
         blog: {
           showReadingTime: true,
@@ -70,6 +70,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    
     ({
       algolia: {
         // The application ID provided by Algolia
@@ -201,17 +202,15 @@ const config = {
         
       },
     }),
+    
 };
 
 module.exports = {
   plugins: [
     // ...
-  
   ],
   // ...
   stylesheets: ["/css/custom.css"],
   scripts: ["/js/custom.js"],
 };
-
-
 module.exports = config;
