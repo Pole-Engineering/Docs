@@ -70,3 +70,33 @@ SSH into your printer and run the following commands to install packages
     -   ```properties showLineNumbers title="Console"
     TEST_RESONANCES AXIS=Y
     ```
+- #### f) Generate the Graphs
+    After performing the resonance tests, Klipper generates a `.csv` file containing the results of the tests. By running a Python script using the commands below, we can graphically interpret this data by plotting it into a graph.
+
+    - #### For Axis X Graph
+    -   ```properties showLineNumbers title="Console"
+    ~/klipper/scripts/calibrate_shaper.py /tmp/resonances_x_*.csv -o /tmp/shaper_calibrate_x.png
+    ```
+
+    - #### For Axis Y Graph
+    -   ```properties showLineNumbers title="Console"
+    ~/klipper/scripts/calibrate_shaper.py /tmp/resonances_y_*.csv -o /tmp/shaper_calibrate_y.png
+    ```    
+    :::caution
+    You need to delete the older `.csv` files before you plotting datas to graphs, otherwise script will use both of the `.csv` files to generate the graphs and that'll cause 2 overlapped graphs to each other which makes harder to read and diagnose.
+    :::
+  
+## Shaper Models
+Klipper offers you 5 different shapers. Each one has its own advantage. You can see few details about them below;
+- **ZV (Ziegler-Vichnyak)**: ZV is a basic form of input shaping designed to reduce vibrations by adjusting motor acceleration.
+
+- **MZV (Modified Ziegler-Vichnyak)**: MZV builds upon ZV by offering better vibration reduction, particularly for systems with higher resonance frequencies.
+
+- **EI (Extra Insensitive)**: EI input shaping increases the system’s insensitivity to a range of vibration frequencies, allowing for better performance across varied conditions.
+
+- **2-Hump EI (Two Hump Extra Insensitive)**: This variant of EI targets two dominant resonant frequencies simultaneously, providing improved performance for systems with dual frequency vibrations.
+
+- **3-Hump EI (Three Hump Extra Insensitive)**: Like 2-Hump EI, this input shaping method is designed to target three resonance frequencies.
+
+As written before, each one has their own advantages but we mostly recommend using `MZV` for our usecase.
+
