@@ -82,10 +82,6 @@ h4 {
   font-weight: 600;
 }
 
-p a:link,{
-  text-decoration: underline;
-}
-
 .table-of-contents__link--active{
   font-family: 'montserrat';
   font-weight: 800;
@@ -186,7 +182,4 @@ body.DocSearch--active {
 }
 .token.plain {
   color: #79f381 !important;
-}
-a>ul> {
-  font-family: 'Times New Roman', Times, serif !important; 
 }

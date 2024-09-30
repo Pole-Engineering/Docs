@@ -16,10 +16,18 @@ Input shaping is a technique to reduce or eliminate vibrations (also known as re
 :::
 
 :::tip skip to;
-- #### [how it works?](asd),
-- #### [Why is it Important?](asd),
-- #### [How to Tune Input Shaper?](asd),
-- #### [Shaper Models](asd),
+- #### [how it works?](/Printing%20Guide/Input%20Shaping#how-it-works-1)
+- #### [Why is it Important?](/Printing%20Guide/Input%20Shaping#why-is-it-important-1)
+- #### [How to Tune Input Shaper?](/Printing%20Guide/Input%20Shaping#how-to-tune-input-shaper-2)
+   - #### [Settings](/Printing%20Guide/Input%20Shaping#settings)
+- #### [Shaper Models](/Printing%20Guide/Input%20Shaping#shaper-models-1)
+- #### [Understanding Input Shaper Graphs](/Printing%20Guide/Input%20Shaping#understanding-input-shaper-graphs)
+     - #### [Power Spectral Density (PSD)](/Printing%20Guide/Input%20Shaping#1-power-spectral-density-psd)
+     - #### [Accelerometer Axes](/Printing%20Guide/Input%20Shaping#2-accelerometer-axes)
+     - #### [Shaper Details](/Printing%20Guide/Input%20Shaping#3-shaper-details)
+     - #### [Frequency](/Printing%20Guide/Input%20Shaping#4-frequency)
+- #### [Smooth Input Shaper Algorithms](/Printing%20Guide/Input%20Shaping#smooth-input-shaper-algorithms)
+  - #### [Smooth shapers avaliable](/Printing%20Guide/Input%20Shaping#smooth-shapers-avaliable)- 
 :::
 
 ## How it Works?
@@ -127,9 +135,9 @@ $$
 7(10^5) = 700,000.
 $$
 If the PSD value changes to "1e5," it indicates multiplication by 100,000, adding another factor of 10.
-> #### 1.1) Magnitude
-  **"When interpreting my graphs, what value of the PSD should I pay attention to?"**
-  Assuming you are using a printer with a rigid motion system (e.g: Crossant), if you have a graph with magnitudes of $$3(10^5)$$ and above, you likely have a noise-free and clean graph, meaning you can use that graph.
+ #### 1.1) Magnitude
+**"When interpreting my graphs, what value of the PSD should I pay attention to?"**
+Assuming you are using a printer with a rigid motion system (e.g: Crossant), if you have a graph with magnitudes of $$3(10^5)$$ and above, you likely have a noise-free and clean graph, meaning you can use that graph.
 :::tip
 The greater the magnitude, the cleaner and better your graphs will be.
 :::
@@ -173,10 +181,10 @@ No matter how clean your graph is, the ZV algorithm is highly aggressive and is 
 As outlined earlier, the assessment involves a wide spectrum of frequency inputs, and the resulting frequency data is represented along the X-axis.
 
 
-### Smooth Input Shaper Algorithms
+## Smooth Input Shaper Algorithms
 The Smooth Input Shaper algorithms are a collection of input shaping algorithms found in the bleeding-edge branch of Danger Klipper (current version: bleeding-edge-v2). These algorithms utilize smooth polynomial functions to minimize vibrations at specific frequencies, similar to traditional input shapers. Their aim is to provide shapers with enhanced overall performance.
 
-#### Smooth shapers avaliable
+### Smooth shapers avaliable
 - **smooth_zv** - Smooth version of zv input shaper
 - **smooth_mzv** - Smooth version of mzv input shaper
 - **smooth_ei** - Smooth version of ei input shaper
