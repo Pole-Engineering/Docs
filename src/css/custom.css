@@ -8,8 +8,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
  @font-face {
-  font-family: 'Bebas Regular';
-  src: url('/static/BebasNeue-Regular.ttf');
+  font-family: 'Bebas Light';
+  src: url('/static/BebasNeue-Book.ttf');
+
+  
 }
  /* You can override the default Infima variables here. */
 :root {
@@ -71,8 +73,8 @@ h3 {
 }
 h4 {
   font-size-adjust: 1;
-  font-family: 'bebas regular';
-  font-variant: unset;
+  font-family: 'bebas light';
+  letter-spacing: 0.05rem;
 }
 
 .menu, .navbar__item{
@@ -184,4 +186,7 @@ body.DocSearch--active {
 }
 .token.plain {
   color: #79f381 !important;
+}
+a>ul> {
+  font-family: 'Times New Roman', Times, serif !important; 
 }
