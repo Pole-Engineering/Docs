@@ -105,6 +105,15 @@ h4 {
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 /* .. */
 .navbar  {
@@ -169,8 +178,6 @@ body.DocSearch--active {
   text-align: left !important;
   overflow-x:auto !important;
 }
-
-
 .token.key {
   color: #df79f3 !important;
 } 
