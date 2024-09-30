@@ -13,6 +13,13 @@ Input shaping is a technique to reduce or eliminate vibrations (also known as re
 - [Pressure Advance](/Extruder%20Calibration) must be done.
 :::
 
+:::tip skip to;
+- #### [how it works?](asd),
+- #### [Why is it Important?](asd),
+- #### [How to Tune Input Shaper?](asd),
+- #### [Shaper Models](asd),
+:::
+
 ## How it Works?
 Input shaping works by adjusting the motion commands sent to the printer’s motors, pre-compensating for these vibrations. Essentially, it modifies the acceleration and deceleration profile of the printer’s movements to cancel out the resonance frequencies, allowing higher accelerations without introducing print defects.
 
@@ -92,9 +99,9 @@ SSH into your printer and run the following commands to install packages
   
 ## Shaper Models
 Klipper offers you 5 different shapers. Each one has its own advantage. You can see few details about them below;
-- **ZV (Ziegler-Vichnyak)**: ZV is a basic form of input shaping designed to reduce vibrations by adjusting motor acceleration.
+- **ZV (Zero Vibration)**: ZV is a basic form of input shaping designed to reduce vibrations by adjusting motor acceleration.
 
-- **MZV (Modified Ziegler-Vichnyak)**: MZV builds upon ZV by offering better vibration reduction, particularly for systems with higher resonance frequencies.
+- **MZV (Modified Zero Vibratio)**: MZV builds upon ZV by offering better vibration reduction, particularly for systems with higher resonance frequencies.
 
 - **EI (Extra Insensitive)**: EI input shaping increases the system’s insensitivity to a range of vibration frequencies, allowing for better performance across varied conditions.
 
