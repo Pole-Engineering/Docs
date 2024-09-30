@@ -1,0 +1,29 @@
+import Admonition from '@theme/Admonition';
+
+
+## What is Add-ons?
+Add-ons are scripts that are developed by the community. There are bunch of different add-ons for different use cases. They are installing via SSH with few commands. Here you can see few!
+
+## Reshelper
+Reshelper is an add-on developed by [lhndo](https://github.com/lhndo) (the owner of [LH Stinger](https://github.com/lhndo/LH-Stinger)). The main purpose of this addon is to automatically generate graphs and move them to a folder that you can see from Mainsail or Fluidd after a resonance test, without the need for SSH commands or FTP.
+
+You can access the project's GitHub page by clicking [here](https://github.com/lhndo/ResHelper). For additional questions, you can also join the LH Stinger [Discord](https://discord.gg/kgEaJr6K5W) server.
+
+:::info
+### Where to use?
+- Used in [Input Shaping](/Printing%20Guide/Input%20Shaping).
+:::
+
+### Installation
+Installation is pretty straight forward.
+  #### Paste this command to your SSH.
+  - ```properties showLineNumbers title="SSH"
+    cd ~
+    rm -rf ResHelper
+    git clone https://github.com/lhndo/ResHelper.git
+    cd ResHelper
+    git checkout newv2
+    ./install.sh
+    ```
+
+And you are all set!

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 import ghosting from '/static/img/ghosting.png';
 import pid from '/static/img/pid.png';

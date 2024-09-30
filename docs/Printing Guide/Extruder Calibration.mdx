@@ -1,4 +1,11 @@
+---
+sidebar_position: 1
+---
+
 import placeholder from '/static/img/placeholder.png';
+import extruder_cal_1 from '/static/img/extruder_cal_1.jpg';
+import extruder_cal_2 from '/static/img/extruder_cal_2.jpg';
+
 
 # Extruder Calibration
 
@@ -60,7 +67,7 @@ We have prepared a macro that allows you to perform many steps of the manual ext
 
   - <div style={{textAlign: 'center'}}>
 
-  <img src={placeholder} alt="overview" style={{width: 1000, opacity: 1}}/>
+  <img src={extruder_cal_1} alt="extruder_cal_1" style={{width: 1000, opacity: 1}}/>
   </div>
 
 You have obtained the necessary values for calibration! You can now proceed to the [calculation](/Extruder%20Calibration#how-to-calculate) tab to finalize the calibration process.
@@ -99,11 +106,11 @@ You have obtained the necessary values for calibration! You can now proceed to t
 
     M104 S[XXX]             ; Heat up the hotend to [XXX]c° 
     ```
-  - :::info Cold Tuning
-    You can calibrate your extruder while the nozzle is cold but that requires to *removing the nozzle* for the direct drive and *removing ptfe tube* for the bowden setup.
-    You need to define `min_extrude_temp:0`under `[extruder]` section in the `printer.cfg`
-    :::
-- #### c) Extrude a bit to enable the stepper.
+    - :::info Cold Tuning
+      You can calibrate your extruder while the nozzle is cold but that requires to *removing the nozzle* for the direct drive and *removing ptfe tube* for the bowden setup.
+      You need to define `min_extrude_temp:0`under `[extruder]` section in the `printer.cfg`
+      :::
+  - #### c) Extrude a bit to enable the stepper.
 
 
   - ```properties showLineNumbers title="Console"
@@ -114,7 +121,7 @@ You have obtained the necessary values for calibration! You can now proceed to t
 
 
   - <div style={{textAlign: 'center'}}>
-    <img src={placeholder} alt="overview" style={{width: 1000, opacity: 1}}/>
+    <img src={extruder_cal_1} alt="extruder_cal_1" style={{width: 1000, opacity: 1}}/>
     </div>
   - :::tip
     For example, if you're going to do calibration over 100mm, place the tape to 110mm. This way, while extruding filament, you'll prevent the tape from getting inside the extruder.
@@ -126,11 +133,11 @@ You have obtained the necessary values for calibration! You can now proceed to t
   G1 E100 F60       ; Extrude 100mm
   ```
 - #### f) Measure the distance between the tape and extruder.
-- Measure the distance between the filament entry point of the extruder and the tape using calipers. In our example, we marked it at 110 mm and extruded 100 mm of filament. The measured distance came out to be 97.6 mm.
+ Measure the distance between the filament entry point of the extruder and the tape using calipers. In our example, we marked it at 110 mm and extruded 100 mm of filament. The measured distance came out to be 97.6 mm.
 
-  - <div style={{textAlign: 'center'}}>
-    <img src={placeholder} alt="overview" style={{width: 1000, opacity: 1}}/>
-    </div>
+- <div style={{textAlign: 'center'}}>
+  <img src={extruder_cal_2} alt="extruder_cal_2" style={{width: 1000, opacity: 1}}/>
+  </div>
 
 ## How to Calculate?
 
@@ -155,10 +162,10 @@ You can calculate your new rotation distance value by yourself using calculator.
 
   - #### When we plug the actual values into the formula:
     $$
-    New Rotation Distance = {(24.3 × 100) \over (107 - 10) } = {2430 \over 97 } = 25,051
+    New Rotation Distance = {(23.35 × 100) \over (105.98 - 10) } = {2335 \over 97 } = 23.35
     $$
 
-    According to our calculations, our new rotation distance value is `25,051`
+    According to our calculations, our new rotation distance value is `23.35`
   - #### Replace the rotation distance with the new value that you have calculated.
   - ```properties showLineNumbers title="printer.cfg"
     ###############################################################
@@ -169,7 +176,7 @@ You can calculate your new rotation distance value by yourself using calculator.
     #dir_pin: PG11
     #enable_pin: !PG13
     #microsteps: 16
-    rotation_distance: 25.051         ; Replace the rotation distance value
+    rotation_distance: 23.35         ; Replace the rotation distance value
     #nozzle_diameter: 0.400
     #max_extrude_only_distance:101
     #filament_diameter: 1.750

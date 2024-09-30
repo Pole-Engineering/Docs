@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+---
+
+
 import placeholder from '/static/img/placeholder.png';
 
 # Extrusion Multiplier

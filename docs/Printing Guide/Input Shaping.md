@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 
 # Input Shaper
 Input shaping is a technique to reduce or eliminate vibrations (also known as resonance) that occur when the printer moves at high accels. These vibrations can cause visible print defects such as ringing or ghosting, where the surface of the print shows repeating patterns or distortions, especially around corners or sharp changes in direction.

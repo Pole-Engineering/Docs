@@ -23,7 +23,7 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 80%;
+  --ifm-code-font-size: 100%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 .heading{
@@ -70,7 +70,7 @@ h3 {
   font-family: 'bebas neue';
 }
 h4 {
-  font-size-adjust: 0.8;
+  font-size-adjust: 1;
   font-family: 'bebas regular';
   font-variant: unset;
 }
