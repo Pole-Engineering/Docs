@@ -1,7 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-const math = require('remark-math');
-const katex = require('rehype-katex');
+
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
@@ -42,8 +41,6 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/pole-engineering/Docs/tree/gh-pages/",
-          remarkPlugins: [math],
-          rehypePlugins: [katex],          
         },
         blog: {
           showReadingTime: true,
@@ -58,31 +55,20 @@ const config = {
     ],
   ],
 
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
-    },
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    
     ({
       algolia: {
         // The application ID provided by Algolia
-        appId: "LJ3565G2XN",
+        appId: "XQ9XAYXM4G",
 
         // Public API key: it is safe to commit it
-        apiKey: "7bd17f6cdc86234ae432961cf8c61ef5",
+        apiKey: "734ce56d3c41999b726e61874c5612da",
 
-        indexName: "Pole",
+        indexName: "crawler_pole",
 
         // Optional: see doc section below
-        contextualSearch: true,
+        contextualSearch: false,
 
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
         externalUrlRegex: "external\\.com|domain\\.com",
@@ -192,25 +178,20 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ["bash", "python", "gcode", "properties"],
-
       },
       colorMode: {
         defaultMode: "dark",
         disableSwitch: true,
         respectPrefersColorScheme: false,
-        
       },
     }),
-    
 };
 
 module.exports = {
-  plugins: [
-    // ...
-  ],
   // ...
   stylesheets: ["/css/custom.css"],
   scripts: ["/js/custom.js"],
 };
+
+
 module.exports = config;
