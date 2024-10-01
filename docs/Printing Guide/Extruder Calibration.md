@@ -9,7 +9,7 @@ import extruder_cal_2 from '/static/img/extruder_cal_2.jpg';
 
 # Extruder Calibration
 
-Extruder calibration is simply the process of ensuring that when you command the printer to extrude 100mm of filament, it actually extrudes exactly 100mm. Don’t confuse this with the [extrusion multiplier](asd); one is a printer setting, while the other is a filament-specific adjustment.
+Extruder calibration is simply the process of ensuring that when you command the printer to extrude 100mm of filament, it actually extrudes exactly 100mm. Don’t confuse this with the [extrusion multiplier](/Printing%20Guide/Extrusion%20Multiplier); one is a printer setting, while the other is a filament-specific adjustment.
 
 :::tip skip to;
 - #### [Why is it Important?](/Printing%20Guide/Extruder%20Calibration#why-is-it-important-1)

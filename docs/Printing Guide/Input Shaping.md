@@ -10,9 +10,16 @@ Input shaping is a technique to reduce or eliminate vibrations (also known as re
 
 :::info
 ### Should be Done Before
-- [Extruder Calibration](/Extruder%20Calibration) must be done.
-- [Extrusion Multiplier](/Extruder%20Calibration) must be done.
-- [Pressure Advance](/Extruder%20Calibration) must be done.
+- [Extruder Calibration](../Printing%20Guide/Extruder%20Calibration) must be done.
+- [Extrusion Multiplier](../Printing%20Guide/Extrusion%20Multiplier) must be done.
+- [Pressure Advance](../Printing%20Guide/Pressure%20Advance) must be done.
+- [Temperature Controls](../Printing%20Guide/Temperature%20Controls) must be done.
+:::
+
+:::note
+### Required
+- [DangerKlipper (DK)](ad) required for the folowing section(s):
+  - #### [Smooth Input Shaper Algorithms](/Printing%20Guide/Input%20Shaping#smooth-input-shaper-algorithms)
 :::
 
 :::tip skip to;
@@ -184,13 +191,16 @@ As outlined earlier, the assessment involves a wide spectrum of frequency inputs
 ## Smooth Input Shaper Algorithms
 The Smooth Input Shaper algorithms are a collection of input shaping algorithms found in the bleeding-edge branch of Danger Klipper (current version: bleeding-edge-v2). These algorithms utilize smooth polynomial functions to minimize vibrations at specific frequencies, similar to traditional input shapers. Their aim is to provide shapers with enhanced overall performance.
 
-### Smooth shapers avaliable
-- **smooth_zv** - Smooth version of zv input shaper
-- **smooth_mzv** - Smooth version of mzv input shaper
-- **smooth_ei** - Smooth version of ei input shaper
-- **smooth_2hump_ei** - Smooth version of 2hump_ei input shaper
-- **smooth_zvd_ei** - Zero Vibration Derivative - Extra-Insensitive Smooth Shaper (Documentation and use cases currently limited)
-- **smooth_si** - Super Insensitive Smooth Shaper (Documentation and use cases currently limited)
+
+
+
+-  ### Smooth shapers avaliable
+    - **smooth_zv** - Smooth version of zv input shaper
+    - **smooth_mzv** - Smooth version of mzv input shaper
+    - **smooth_ei** - Smooth version of ei input shaper
+    - **smooth_2hump_ei** - Smooth version of 2hump_ei input shaper
+    - **smooth_zvd_ei** - Zero Vibration Derivative - Extra-Insensitive Smooth Shaper (Documentation and use cases currently limited)
+    - **smooth_si** - Super Insensitive Smooth Shaper (Documentation and use cases currently limited)
 
 
 
