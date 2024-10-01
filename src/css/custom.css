@@ -31,7 +31,7 @@
 .heading{
   font-family: 'bebas neue';
   font-weight: 600;
-}
+} 
 
 .table-of-contents__link {
   font-family: 'montserrat';
@@ -44,22 +44,19 @@ h1, h2.anchor {
 }
 h1 {
   font-size-adjust: 1;
-} al
+}  
 
-h2.anchor {
-  font-family: 'bebas neue';
-  font-weight: 400;
-  font-size-adjust:1;
-  line-height:100;
-}
 
 h3 {
   font-family: 'bebas neue';
   font-weight: 60;
 }
 
-h2 {
-  font-size-adjust: 1.1;
+h2.anchor {
+  font-family: 'bebas neue';
+  font-weight: 400;
+  font-size-adjust: 1;
+  line-height: 2rem;
 }
 
 .text--truncate{
@@ -68,21 +65,23 @@ h2 {
 }
 
 h3 {
-  font-size-adjust: 1.2;
+  font-size-adjust: 1;
   font-family: 'bebas neue';
+  line-height: 2rem;
 }
 h4 {
   font-size-adjust: 1;
   font-family: 'bebas light';
   letter-spacing: 0.05rem;
+  line-height: 1.7rem;
 }
 
-.menu, .navbar__item{
+.menu, .navbar__item {
   font-family: 'montserrat';
   font-weight: 600;
 }
 
-.table-of-contents__link--active{
+.table-of-contents__link--active {
   font-family: 'montserrat';
   font-weight: 800;
 }
@@ -153,23 +152,22 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .DocSearch-Form {
   border-radius: 1rem !important;
 }
-.DocSearch-Modal,.DocSearch-Hit-source
- {
+.DocSearch-Modal,.DocSearch-Hit-source {
   background-color: rgba(255, 0, 0, 0.0) !important;
   backdrop-filter: blur(1rem);
   box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.645) !important;
   border-radius: 1rem !important;
-
-
 }
+
 .DocSearch-Button {
   border-radius: .5rem !important;
 }
+
 .DocSearch-Container {
   background-color: rgba(255, 0, 0, 0.0) !important;
   margin-top: 3rem !important;
-  
 }
+
 body.DocSearch--active {
   overflow: auto !important;
 }
