@@ -1,4 +1,4 @@
-
+import deneme from '/static/img/deneme.gif';
 
 # TMC Tuning
 For TMC tuning, you'll need the [TMC Autotune](/Printing%20Guide/Useful%20Add-ons#tmc-autotune-1) add-on. This extension generates optimal values for most registers of TMC stepper motor drivers by using the motor’s datasheet specifications and the user’s selected tuning goal. By leveraging this data, the extension ensures that the motor operates efficiently and meets the user's specific requirements, whether the focus is on performance, noise reduction, or precision. Click [here](/Printing%20Guide/Useful%20Add-ons#installation-5) to see the installation guide.
@@ -9,6 +9,7 @@ For TMC tuning, you'll need the [TMC Autotune](/Printing%20Guide/Useful%20Add-on
   - #### [Autotune Configuration](/Printing%20Guide/TMC%20Tuning#autotune-configuration-1)
   - #### [Defining Stepper](/Printing%20Guide/TMC%20Tuning#defining-stepper-1)
 :::
+
 
 ## Config Details
 ### Must be Included
@@ -70,3 +71,7 @@ You can add your own stepper with adding the following section to `motor_databas
       ```
 
 And you are all set!
+
+ <div style={{textAlign: 'center'}}>
+ <img src={deneme} alt="shaper" style={{width: 1000, opacity: 1}}/>
+ </div>

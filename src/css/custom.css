@@ -188,3 +188,6 @@ body.DocSearch--active {
 .token.plain {
   color: #79f381 !important;
 }
+.video-gif{
+  border-radius: 10px;
+}

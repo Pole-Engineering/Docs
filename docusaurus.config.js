@@ -202,8 +202,12 @@ const config = {
 
 module.exports = {
   // ...
-  stylesheets: ["/css/custom.css"],
+  stylesheets: [
+    "/css/custom.css", 
+    "/css/youtube-embed.css"
+  ],
   scripts: ["/js/custom.js"],
+  
 };
 
 
