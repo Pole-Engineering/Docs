@@ -142,31 +142,7 @@ With the following macro, you can automatically calculate your new rotation dist
     ##############################################################
     ##  Replace current "rotation distance" with the new value  ##
     ##############################################################
-    [gcode_macro _load_unload]
-    gcode:
-      {% set saved_extruder = printer.toolhead.extruder %}
-      {% set EXTRUDER = params.EXTRUDER|default(saved_extruder)|lower %}
-      {% set km = printer["gcode_macro _km_globals"] %}
-      # Use the global min as default if provided, else use per extruder min + 5.
-      {% set default_minimum = km.load_min_temp if km.load_min_temp else
-            (printer.configfile.settings[EXTRUDER].min_extrude_temp + 5) %}
-      {% if 'MINIMUM' in params %}
-        {% set MINIMUM = params.MINIMUM|int %}
-      # This is the special case for a filament change after an idle timeout.
-      {% elif printer.pause_resume.is_paused and printer[EXTRUDER].target == 0 and
-              printer["gcode_macro resume"].saved_extruder_temp %}
-        {% set MINIMUM = printer["gcode_macro resume"].saved_extruder_temp %}
-      # Use the target temp if higher than the default.
-      {% elif printer[EXTRUDER].target > default_minimum %}
-        {% set MINIMUM = printer[EXTRUDER].target %}
-      {% else %}
-        {% set MINIMUM = default_minimum %}
-      {% endif %}
-      {% if MINIMUM < printer.configfile.settings[EXTRUDER].min_extrude_temp %}
-        { action_raise_error("Extrude below minimum temp.") }
-      {% elif printer.pause_resume.is_paused %}
-        # Clear the saved E if we're (un-)loading while paused.
-        SET_GCODE_VARIABLE MACRO=resume VARIABLE=saved_e VALUE="{0.0}"
+    TBD
 
 - #### b) Run the macro.
    - ```properties showLineNumbers title="Console"
